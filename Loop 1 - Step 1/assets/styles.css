@@ -1,0 +1,99 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+  }
+
+  body{
+    background-color: #85a5d4;
+    font-family: sans-serif;
+  }
+  p{
+    text-align: center;
+  }
+  .container{
+    background-color: white;
+    width: 80%;
+    height: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+    padding: 30px 0;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+  }
+  .section{
+    background-color: white;
+    height: 33.33%;
+    padding: 10px;
+    position: relative;
+  }
+  .device, .laptop, .monitor{
+    height: 70px;
+    width: 100px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center;
+  }
+  .device{
+    background-image: url("./img/device.svg");
+  }
+  .laptop{
+    background-image: url("./img/laptop.svg");
+  }
+  .monitor{
+    background-image: url("./img/monitor.svg");
+  }
+  .section > h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #5572d6;
+    margin-top: 20px;
+  }
+  .section > p{
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 14px;
+    color: #a7a9b4;
+  }
+  .cost{
+    text-align: center;
+    padding: 20px;
+    color: #5572d6;    
+    font-size: 36px;
+  }
+  .cost sup{
+    vertical-align: text-top;
+  }
+  span{
+    text-align: left;
+    font-weight: 600;
+  }
+  .cost sub{
+    vertical-align: text-bottom;
+  }
+  .cost sup, .cost sub{
+    font-size: 14px;
+    line-height: 200%;
+  }
+  
+  @media only screen and (min-width: 767px){
+    .container{
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 55%;
+    }
+    .section{
+      width: 33.33%;
+      float: left;
+      height: 100%;
+    }
+  }
