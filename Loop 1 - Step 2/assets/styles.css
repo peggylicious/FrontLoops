@@ -5,14 +5,67 @@
     border: 1px solid black;
 }
 
+.center, .circle, .circle::before, .circle::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-position{
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
 body{
     background-image: url("./img/background.jpg");
 }
 .container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 70%;
-    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.payment-method, .visa, .master-card, .maestro, .next-step, .progress{
+    position: relative;
+    padding: 10px;
+}
+.visa-img{
+    background-image: url("./img/visa.svg");
+}
+
+.master-card-img{
+    background-image: url("./img/mastercard.svg");
+}
+.maestro-img{
+    background-image: url("./img/maestro.svg");
+}
+.next-step-img{
+    background-image: url("./img/arrow.svg");
+}
+.visa-text{
+
+}
+
+.payment-method-txt{
+    text-align: center;
+}
+
+.circle, .circle::before, .circle::after{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.circle::before{
+    left: -10px;
+    content: "";
+    background-color: yellow;
+}
+.circle::after{
+    left: 10px;
+    content: "";
     background-color: red;
 }
