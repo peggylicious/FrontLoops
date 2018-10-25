@@ -2,13 +2,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
 }
-    a{
-        display: block;
-    }
+    
     body{
         background-image: url("./img/background.jpg");
+        font-family: Roboto, sans-serif;
+        text-transform: uppercase;
+        background-position: 50% 30%;
+    }
+    .container{
+        width: 80%;
+        box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    /* Common Styles */
+    a{
+        display: block;
+        text-decoration: none;
     }
     .center{
         position: absolute;
@@ -17,70 +27,99 @@
         transform: translate(-50%, -50%);
     }
     .img-position{
-        height: 50px;
-        width: 50px;
+        height: 30px;
+        width: 40px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
     }
-
-    .container{
-        width: 80%;
-        background-color: white;
-        padding: 20px 0;
-    }
-
     .payment-method, .visa, .master-card, .maestro, .next-step, .progress{
         position: relative;
-        padding: 10px;
+        padding: 10px 40px;
+        font-weight: 900;
+        background-color: white;
+    }
+    .visa, .master-card, .maestro{
+        border-top: 1px solid rgba(128, 128, 128, .4);
+        color: rgba(128, 128, 128, .8);
+        font-size: 14px;    
+    }
+    .master-card, .payment-method{
+        color: black;
     }
     .visa-txt, .master-card-txt, .maestro-txt{
         left: 100px;
         transform: translate(0%, -50%);
     }
-
+    .check{
+        height: 100%;
+        left: initial;
+        right: 3%;
+        transform: translate(0%, -50%);
+        background-image: url("./img/check.svg");
+        background-size: 60%;
+    }
     /* Payment Method */
+    .payment-method{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
     .payment-method-txt{
         text-align: center;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    .circle{
+        background-color: rgba(128, 128, 128, .6);
     }
     .circle, .circle::before, .circle::after{
         position: absolute;
-        width: 10px;
-        height: 10px;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
-        background-color: blue;
     }
     .circle::before{
         left: -10px;
         content: "";
-        background-color: yellow;
+        background-color: rgba(128, 128, 128, .8);
     }
     .circle::after{
         left: 10px;
         content: "";
-        background-color: red;
+        background-color: rgba(128, 128, 128, .4);
     }
-
     /* Visa */
     .visa-img{
         background-image: url("./img/visa.svg");
     }
-
     .master-card-img{
         background-image: url("./img/mastercard.svg");
     }
     .maestro-img{
         background-image: url("./img/maestro.svg");
     }
-    .next-step-img{
-        background-image: url("./img/arrow.svg");
+    .next-step{
+        background-color: rgb(76, 125, 230);
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
-    .visa-text{
-
+    .arrow-img{
+        position: absolute;
+        background-image: url("./img/arrow.svg");
+        display: inline-block;
+        height: 100%;
+        width: 20px;
+        margin-left: 40px;
+        /* left: 65%; */
+        transform: translate(0%, -50%);
+        background-size: 80%;
     }
     
     @media only screen and (min-width: 480px){
         .container{
-            width: 300px;
+            width: 350px;
         }
     }
