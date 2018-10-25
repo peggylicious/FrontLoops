@@ -2,70 +2,85 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+    a{
+        display: block;
+    }
+    body{
+        background-image: url("./img/background.jpg");
+    }
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .img-position{
+        height: 50px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
 
-.center, .circle, .circle::before, .circle::after{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.img-position{
-    height: 50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-body{
-    background-image: url("./img/background.jpg");
-}
-.container{
-    width: 40%;
-    background-color: white;
-    padding: 20px 0;
-}
+    .container{
+        width: 80%;
+        background-color: white;
+        padding: 20px 0;
+    }
 
-.payment-method, .visa, .master-card, .maestro, .next-step, .progress{
-    position: relative;
-    padding: 10px;
-}
-.visa-img{
-    background-image: url("./img/visa.svg");
-}
+    .payment-method, .visa, .master-card, .maestro, .next-step, .progress{
+        position: relative;
+        padding: 10px;
+    }
+    .visa-txt, .master-card-txt, .maestro-txt{
+        left: 100px;
+        transform: translate(0%, -50%);
+    }
 
-.master-card-img{
-    background-image: url("./img/mastercard.svg");
-}
-.maestro-img{
-    background-image: url("./img/maestro.svg");
-}
-.next-step-img{
-    background-image: url("./img/arrow.svg");
-}
-.visa-text{
+    /* Payment Method */
+    .payment-method-txt{
+        text-align: center;
+    }
+    .circle, .circle::before, .circle::after{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: blue;
+    }
+    .circle::before{
+        left: -10px;
+        content: "";
+        background-color: yellow;
+    }
+    .circle::after{
+        left: 10px;
+        content: "";
+        background-color: red;
+    }
 
-}
+    /* Visa */
+    .visa-img{
+        background-image: url("./img/visa.svg");
+    }
 
-.payment-method-txt{
-    text-align: center;
-}
+    .master-card-img{
+        background-image: url("./img/mastercard.svg");
+    }
+    .maestro-img{
+        background-image: url("./img/maestro.svg");
+    }
+    .next-step-img{
+        background-image: url("./img/arrow.svg");
+    }
+    .visa-text{
 
-.circle, .circle::before, .circle::after{
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: blue;
-}
-
-.circle::before{
-    left: -10px;
-    content: "";
-    background-color: yellow;
-}
-.circle::after{
-    left: 10px;
-    content: "";
-    background-color: red;
-}
+    }
+    
+    @media only screen and (min-width: 480px){
+        .container{
+            width: 300px;
+        }
+    }
