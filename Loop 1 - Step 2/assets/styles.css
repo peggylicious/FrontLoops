@@ -35,7 +35,7 @@
     }
     .payment-method, .visa, .master-card, .maestro, .next-step, .progress{
         position: relative;
-        padding: 10px 40px;
+        padding: 10px 30px;
         font-weight: 900;
         background-color: white;
     }
