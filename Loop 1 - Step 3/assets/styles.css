@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 1px solid black;
 }
     body{
         font-family: Roboto, sans-serif;
@@ -25,7 +26,7 @@
         background-position: 20% -380%;
     }
     .cont-cont{
-        padding: 40px;
+        padding: 70px;
         background: red;
     }
     .wrapper{
@@ -41,16 +42,15 @@
         padding: 20px 0;
     }
     .surround{
-        background-color: #fff;
+        background-color: orange;
         position: absolute;
         right: 5%;
         left: initial;
         height: 30px;
         width: 30px;
-        /* padding: 5px; */
+        /* padding: 25px; */
         transform: translate(0%, -50%);
         border-radius: 50%;
-
     }
     .account{
         background-image: url("./img/account.svg");
@@ -60,6 +60,7 @@
         /* right: 5%; */
         /* transform: translate(0%, -50%); */
         position: relative;
+        border-radius: 50%;
     }
 
     @media only screen and (min-width: 480px){
