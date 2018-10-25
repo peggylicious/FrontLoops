@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    body{
+        font-family: Roboto, sans-serif;
+        background-color: rgb(39, 160, 119);
+    }
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .img-position{
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .container{
+        height: 400px;
+        width: 600px;
+        background-color: #fff;
+        background-image: url("./img/bicycle.png");
+        background-position: 20% -380%;
+    }
+    .cont-cont{
+        padding: 40px;
+        background: red;
+    }
+    .wrapper{
+        width: 90%;
+        background-color: red;
+        margin: 0 auto;
+        position: relative;
+        /* height: 300px; */
+    }
+    .header{
+        position: relative;
+        background-color: blue;
+        padding: 20px 0;
+    }
+    .surround{
+        background-color: #fff;
+        position: absolute;
+        right: 5%;
+        left: initial;
+        height: 30px;
+        width: 30px;
+        padding: 20px;
+        transform: translate(0%, -50%);
+        border-radius: 50%;
+
+    }
+    .account{
+        background-image: url("./img/account.svg");
+        height: 25px;
+        width: 25px;
+        /* left: initial; */
+        /* right: 5%; */
+        /* transform: translate(0%, -50%); */
+        position: relative;
+    }
+
+    @media only screen and (min-width: 480px){
+        
+    }
