@@ -2,11 +2,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
-    body{
-        font-family: Roboto, sans-serif;
-        background-color: rgb(39, 160, 119);
+body{
+    font-family: Roboto, sans-serif;
+    background-color: rgb(39, 160, 119);
+}
+    h1, .price-listing p{
+        display: inline-block;
     }
     .center{
         position: absolute;
@@ -14,55 +17,102 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .right{
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(0%, -50%);
+    }
     .img-position{
         background-size: 100%;
         background-repeat: no-repeat;
     }
     .container{
         height: 400px;
-        width: 600px;
-        background-color: #fff;
+        width: 250px;
+        padding: 20px;
         background-image: url("./img/bicycle.png");
-        background-position: 20% -380%;
-    }
-    .cont-cont{
-        padding: 70px;
-        background: red;
-    }
-    .wrapper{
-        width: 90%;
-        background-color: red;
-        margin: 0 auto;
-        position: relative;
-        /* height: 300px; */
+        background-position: 20% 130%;
+        background-size: 100%;
+        background-color: #fff;
+        background-attachment: local;
     }
     .header{
-        position: relative;
-        background-color: blue;
+        overflow: hidden;
         padding: 20px 0;
+        position: relative;
     }
-    .surround{
-        background-color: orange;
-        position: absolute;
-        right: 5%;
-        left: initial;
-        height: 30px;
-        width: 30px;
-        /* padding: 25px; */
-        transform: translate(0%, -50%);
+    .cont-cont{
+        padding: 22px;
         border-radius: 50%;
+    }
+    .img-wrapper{
+        padding: 8px;
+        background-color: white;
+        border-radius: inherit;
     }
     .account{
         background-image: url("./img/account.svg");
-        height: 25px;
-        width: 25px;
-        /* left: initial; */
-        /* right: 5%; */
-        /* transform: translate(0%, -50%); */
-        position: relative;
-        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        border-radius: inherit;
+        background-color: #fff;
+        background-size: 100%;
+        background-position: 50% 50%;
+    }
+    .cont-cont:hover{
+        background-color: rgba(128, 128, 128, .2);
+        cursor: pointer;
     }
 
-    @media only screen and (min-width: 480px){
+    .thanks{
+        color: rgba(128, 128, 128, .6);
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .price-listing{
+        position: relative;
+        padding: 20px 0;
+    }
+    .price-listing p{
+        color: rgba(0, 0, 0, .7);
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .price-listing h2{
+        font-size: 16px;
+    }
+
+    @media only screen and (min-width: 500px){
+        .container{
+            height: 400px;
+            width: 400px;
+            background-position: 20% 180%;
+            background-attachment: local;
+        }
+        .price-listing p{
+            font-size: 16px;
+        }
+        .price-listing h2{
+            font-size: 24px;
+        }
         
     }
+    @media only screen and (min-width: 767px){
+        .container{
+            height: 400px;
+            width: 600px;
+            background-position: 20% -380%;
+        }
+
+       
+    }
+    /* @media only screen and (max-width: 320px){
+        .container{
+            height: 400px;
+            width: 250px;
+            background-position: 20% 130%;
+            background-attachment: local;
+        }
+    } */
