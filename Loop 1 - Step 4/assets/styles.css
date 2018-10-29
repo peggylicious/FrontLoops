@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+body{
+    background-color: rgb(129, 163, 214);
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    background-color: #fff;
+}
+.header{
+    background-color: yellow;
+    padding: 20px;
+    position: relative;
+}
+ul{
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(50%, -50%); 
+}
+.close{
+    position: absolute;
+    right: 0;
+    transform: translate(-50%, -50%);
+    left: initial;
+}
+
+.close div{
+    height: 4px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+}
+
+.close .one{
+    transform: rotate(45deg);
+}
+
+.close .two{
+    transform: rotate(-45deg);
+}
