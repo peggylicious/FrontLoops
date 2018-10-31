@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 body{
     background-color: rgb(129, 163, 214);
@@ -24,24 +24,27 @@ body{
     position: relative;
 }
 ul{
-    float: left;
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translate(50%, -50%); 
+}
+li{
+    padding: 10px;
 }
 .close{
     position: absolute;
     right: 0;
-    transform: translate(-50%, -50%);
-    left: initial;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background-color: green;
 }
 
 .close div{
-    height: 4px;
-    width: 20px;
+    height: 2px;
+    width: 15px;
     background-color: red;
     position: absolute;
+    right: 0;
 }
 
 .close .one{
