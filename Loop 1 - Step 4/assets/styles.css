@@ -28,7 +28,7 @@ body{
     height: 500px;
     width: 500px;
     position: absolute;
-    background-color: #fff;
+    background-color: black;
 }
 .header{
     background-color: yellow;
@@ -94,13 +94,15 @@ span{
     /* border-radius: 5px; */
     /* padding: 20px; */
 }
-
+p{
+    position: relative;
+}
 p:before{
     position: absolute;
     content: "";
-    /* border-left: 12px solid transparent;
+    border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 12px solid blue; */
+    border-bottom: 12px solid blue;
     left: -15px;
     /* top: -2px; */
     transform: rotate(45deg);
