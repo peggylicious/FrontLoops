@@ -6,6 +6,7 @@
 }
 body{
     background-color: rgb(129, 163, 214);
+    font-family: Roboto, sans-serif;
 }
 .right{
     position: absolute;
@@ -19,6 +20,13 @@ body{
     left: 0%;
     transform: translate(0%, -50%);
 }
+.you-time{
+    text-align: left;
+    padding: 10px 0;
+}
+.friend-time{
+    text-align: right;
+}
 .center{
     top: 50%;
     left: 50%;
@@ -28,36 +36,34 @@ body{
     height: 500px;
     width: 500px;
     position: absolute;
-    background-color: black;
+    background-color: white; 
 }
 .header{
-    background-color: yellow;
+    background-color: dodgerblue;
     padding: 20px;
     position: relative;
+    overflow: hidden;
 }
 
 ul{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0%, -50%); 
-    padding-left: 20px;
+    float: left;
+    padding: 10px;
+    color: #ffffff;
 }
 li{
     padding: 0px;
 }
 .close{
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 50%;
     transform: translate(50%, -50%);
-    background-color: green;
 }
 
 .close div{
     height: 2px;
     width: 15px;
-    background-color: red;
+    background-color: #ffffff;
     position: absolute;
     right: 0;
 }
@@ -74,39 +80,104 @@ li{
     padding: 20px 0;
 }
 .rule{
-    background-color: red;
+    background-color: rgba(209, 206, 206, .3);
     width: 40%;
     height: 3px;
 }
-
+.rule3{
+    background-color: rgb(209, 206, 206, .3);
+    width: 100%;
+    height: 3px;
+}
 span{
     position: absolute;
+    color: rgb(209, 206, 206);
+}
+.thread{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding: 10px;
+}
+.you, .friend, .blocked{
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
 .you{
-    padding-left: 30px;
+    padding-left: 15px;
+}
+.friend, .blocked{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+    padding-right: 15px;
+}
+
+.you-msg, .friend-msg, .blocked-msg{
+    max-width: 70%;
+    background-color: rgb(209, 206, 206);
     position: relative;
 }
 .you-msg{
-    max-width: 70%;
-    /* float: left; */
-    background-color: blue;
-    position: relative;
-    /* border-radius: 5px; */
-    /* padding: 20px; */
+    border-radius: 0px 5px 5px 5px;
+    /* display: block; */
+    float: left;
 }
+.friend-msg, .blocked-msg{
+    border-radius: 0px 0px 5px 5px;
+    right: 0;
+    float: right;
+}
+
 p{
-    position: relative;
+    padding: 10px;
+    font-weight: bold;
 }
-p:before{
+.you-msg:before, .friend-msg:after{
     position: absolute;
     content: "";
+    height: 12px;
+    box-sizing: border-box;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 12px solid blue;
-    left: -15px;
-    /* top: -2px; */
-    transform: rotate(45deg);
+    border-bottom: 12px solid rgb(209, 206, 206);
+    top: -2px;
     margin: 0;
     padding: 0;
-    line-height: 50px;
+    overflow: hidden;
+}
+.you-msg:before{
+    left: -15px;
+    transform: rotate(45deg);
+}
+.friend-msg:after{
+    right: -15px;
+    transform: rotate(-45deg);
+}
+
+.typing-area{
+    /* background-color: pink; */
+    width: 95%;
+    margin: 0 auto
+}
+
+#type-msg{
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    color: black;
+}
+input{
+    border-color: white;
+    /* outline: none; */
+    border: none;
+    height: 50px;
+}
+#send{
+    float: right;
+    width: 10%;
+    background-color: #fff;
+    font-weight: bold;
+    color: dodgerblue;
 }
