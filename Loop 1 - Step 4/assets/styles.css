@@ -23,17 +23,21 @@ body{
 .you-time{
     text-align: left;
     padding: 10px 0;
+    color: rgba(209, 206, 206);
 }
 .friend-time{
     text-align: right;
+    color: rgba(209, 206, 206);
+
 }
 .center{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 .container{
-    height: 500px;
+    height: 400px;
     width: 500px;
     position: absolute;
     background-color: white; 
@@ -49,6 +53,7 @@ ul{
     float: left;
     padding: 10px;
     color: #ffffff;
+    font-weight: bold;
 }
 li{
     padding: 0px;
@@ -98,6 +103,7 @@ span{
     background-color: #fff;
     position: relative;
     padding: 10px;
+    /* height: 80%; */
 }
 .you, .friend, .blocked{
     display: block;
@@ -113,10 +119,16 @@ span{
     /* background-color: red; */
     padding-right: 15px;
 }
+.blocked-msg{
+    background-color: pink;
+}
+.you-msg, .friend-msg{
+    background-color: rgb(209, 206, 206);
+}
 
 .you-msg, .friend-msg, .blocked-msg{
     max-width: 70%;
-    background-color: rgb(209, 206, 206);
+    /* background-color: rgb(209, 206, 206); */
     position: relative;
 }
 .you-msg{
@@ -129,6 +141,7 @@ span{
     right: 0;
     float: right;
 }
+
 
 p{
     padding: 10px;
