@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+body{
+    font-family: Roboto, sans-serif;
+    background-color: rgb(121, 117, 134);
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+p, footer input{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(121, 117, 134);
+
+}
+
+.container{
+    position: absolute;
+    height: 500px;
+    width: 70%;
+    border-radius: 5px;
+}
+.content{
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    position: relative;
+    padding: 50px 40px 0px 40px;
+    overflow: hidden;   
+}
+.social-media{
+    margin-top: 50px;
+}
+.photo{
+    width: 30%;
+    background-image: url("./img/side.jpg");
+    height: 100%;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.google, .facebook, .twitter{
+    padding: 15px;
+}
+
+.google-icon{
+    background-image: url("./img/googleplus.svg");
+}
+
+.facebook-icon{
+    background-image: url("./img/facebook.svg");
+}
+.twitter-icon{
+    background-image: url("./img/twitter.svg");
+}
+.google-icon, .facebook-icon, .twitter-icon{
+    height: 20px;
+    background-repeat: no-repeat;
+    float: left;
+    width: 20px;
+}
+.icon{
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid rgba(155, 146, 146, .2);
+    border-radius: 5px;
+}
+.icon:hover{
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    border: none;
+    cursor: pointer;
+}
+.icon:hover p, footer > input:hover{
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+.icon p{
+    float: left;
+    line-height: 20px;
+    margin-left: 200px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(121, 117, 134);
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(155, 146, 146, .2);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 50px 40px 0px 40px;
+    height: 100px;
+    line-height: 
+}
+footer p, footer input{
+    float: left;
+}
+footer p{
+    color: black;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+footer input{
+    float: right;
+    border: none;
+    background-color: #fff;
+    text-transform: uppercase;
+}
