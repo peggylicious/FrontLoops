@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     color: black;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: Roboto;
 }
 body{
@@ -33,9 +33,20 @@ body{
     background-color: #fff;
     /* height: 90vh; */
 }
-
+.title{
+    padding: 50px 20px;
+    /* background-color: blue; */
+    height: 80%;
+    color: #fff;
+}
+.title p, .title h1{
+    color: #fff;
+}
+.title p{
+    font-size: 24px;
+}
 .one{
-    background-color: #00ff00;
+    background-color: #5e585e;
     float: left;
     width: 40%;
     height: 100%;
@@ -44,40 +55,49 @@ body{
 }
 
 .two{
-    background-color: #ff00ff;
+    background-color: #ffffff;
     margin-left: 40%;
     height: 100%;
 }
 
 .hr{
-    width: 20%;
+    width: 15%;
     height: 5px;
-    background-color: red;
+    background-color: rgb(238, 98, 98);
+    margin-top: 10px;
 }
 .about{
     position: absolute;
     bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: #fff;
+    height: 20%;
+    /* width: 100%; */
+    /* background-color: #fff; */
+    padding: 25px 25px;
 }
 .img{
     height: 50px;
     width: 50px;
     background-image: url("./img/avatar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
-    position: absolute;
+    float: left;
+    /* margin: 0 auto; */
+    /* position: absolute; */
+    /* margin-left: 50px; */
 }
 
 .name{
+    color: #fff;
     
     width: 200px;
     position: absolute;
-    margin-left: 70px;
+    margin-left: 100px;
 }
 .text{
     height: 80%;
-    padding: 20px;
+    padding: 50px 20px;
     line-height: 25px;
 }
 .text p{
@@ -90,21 +110,30 @@ body{
 }
 .hr-1{
     width: 100%;
-    height: 5px;
-    background-color: red;
+    height: 10px;
+    background: linear-gradient(rgba(238, 235, 235, 0.2), rgba(238, 235, 235, .5));
+    box-shadow: 0px 2px 10px -4px rgba(0, 0, 0, 0.2);
     position: absolute;
 }
 .fl-left{
     position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0%, -50%);
+    /* padding: 50px 20px; */
 }
 .fl-right{
     position: absolute;
     width: 100px;
     height: 50px;
+    /* padding: 50px 20px; */
+    top: 50%;
+    right: 20px;
+    transform: translate(0%, -50%);
 }
 
 .fl-right span{
-    margin-left: 20px;
+    margin-left: 25px;
     position: absolute;
 }
 .comment{
@@ -115,12 +144,14 @@ body{
 }
 .sect{
     position: relative;
-    height: 100%;;
+    height: 100%;
+    /* padding: 50px; */
 }
 .more{
     height: 20px;
     width: 20px;
     background-repeat: no-repeat;
+    /* font-weight: bold; */
     /* position: relative; */
     /* margin-left: 70px; */
 }
