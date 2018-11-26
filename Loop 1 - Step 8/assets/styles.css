@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+    font-family: Roboto, serif;
+}
+body{
+    background-color: rgb(175, 135, 135);
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.show{
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    /* font-family: 'Playfair Display', serif; */
+}
+.show p{
+    font-size: 74px;
+}
+.container{
+    width: 900px;
+    height: 80vh;
+    overflow: hidden;
+    display: none;
+}
+.arrow-bck-cont, .countries{
+    padding: 30px;
+    height: 70px;
+    font-size: 12px;
+}
+.arrow-fwd-cont a{
+    font-size: 12px;
+    color: #000000;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 16px;
+}
+.countries-cont{
+    overflow: hidden;
+}
+h1{
+    font-size: 3rem;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+}
+
+@media only screen and (min-width: 900px){
+    .container{
+        display: block;
+    }
+    .container .left, .container .right{
+        float: left;
+        height: 100%;
+        background-color: #fff;
+    }
+    .container .left{
+        width: 35%;
+        background-image: url("./img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 center;
+    }
+    .container .right{
+        width: 65%;
+    }
+    svg, span{
+        vertical-align: middle;
+    }
+    .countries{
+        float: right;
+        font-family: 'Playfair Display', serif;
+    }
+    .countries span, .arrow-bck-cont{
+        font-size: 12px;
+        color: gray;
+    }
+    .countries span:hover, .arrow-bck-cont a:hover span, .arrow-bck-cont a:hover svg{
+        color: black;
+        fill: #000000;
+    }
+    .content{
+        padding: 30px 70px;
+    }
+    .content h1{
+        position: relative;
+    }
+    .content .author{
+        margin: 15px 0;
+        font-family: 'Playfair Display', serif;
+    }
+    .content h1 span{
+        display: inline-block;
+        width: 100px;
+        height: 3px;
+        background-color: black;
+        margin-left: 20px;
+    }
+    .video-section{
+        overflow: hidden;
+    }
+    .video-section .v{
+        float: left;
+    }
+    .video-section .v svg{
+        background-color: #fff;
+    }
+    .video{
+        height: 100px;
+        width: 150px;
+        background-image: url("./img/preview.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        float: left;
+    }
+    .video svg{
+        border-radius: 50%;
+    }
+    .description{
+        float: right;
+        width: 250px;
+        height: 100%;
+    }
+    .description p{
+        line-height: 1.5;
+        font-family: serif;
+    }
+}
