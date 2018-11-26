@@ -19,14 +19,13 @@ body{
     font-weight: bold;
     width: 100%;
     text-align: center;
-    /* font-family: 'Playfair Display', serif; */
 }
 .show p{
     font-size: 74px;
 }
 .container{
     width: 900px;
-    height: 80vh;
+    height: 90vh;
     overflow: hidden;
     display: none;
 }
@@ -35,8 +34,11 @@ body{
     height: 70px;
     font-size: 12px;
 }
+.arrow-bck-cont a span{
+    color: #3473af;
+}
 .arrow-fwd-cont a{
-    font-size: 12px;
+    font-size: 10px;
     color: #000000;
 }
 a{
@@ -48,10 +50,11 @@ a{
     overflow: hidden;
 }
 h1{
-    font-size: 3rem;
+    font-size: 4rem;
     display: inline-block;
     font-family: 'Playfair Display', serif;
     width: 100%;
+    font-weight: 500;
 }
 
 @media only screen and (min-width: 900px){
@@ -91,11 +94,8 @@ h1{
     .content{
         padding: 30px 70px;
     }
-    .content h1{
-        position: relative;
-    }
     .content .author{
-        margin: 15px 0;
+        margin: 30px 0;
         font-family: 'Playfair Display', serif;
     }
     .content h1 span{
@@ -103,7 +103,7 @@ h1{
         width: 100px;
         height: 3px;
         background-color: black;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .video-section{
         overflow: hidden;
@@ -133,6 +133,6 @@ h1{
     }
     .description p{
         line-height: 1.5;
-        font-family: serif;
+        font-size: 17px;
     }
 }
