@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+}
+body{
+    background-color: rgb(240, 209, 110);
+}
+.container{
+    width: 60%;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section{
+    float: left;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 20px;
+}
+.section_1{
+    width: 40%;
+    background-color: #fff;
+}
+.section .section_content{
+    overflow: scroll;
+}
+header{
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+header h2{
+    float: left;
+}
+header svg{
+    float: right;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.visa, .master, .maestro{
+    background-color: #fff;
+    padding: 20px 10px 10px 10px;
+    margin: 30px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(141, 163, 223);
+}
+.visa .visa_img{
+    background-image: url("./img/visa.svg");
+}
+.master .master_img{
+    background-image: url("./img/mastercard.svg");
+}
+.maestro .maestro_img{
+    background-image: url("./img/maestro.svg");
+}
+.visa .visa_img,
+.master .master_img,
+.maestro .maestro_img{
+    height: 50px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.visa_text, .maestro_text, .master_text{
+    /* padding-top: 20px; */
+}
+.visa_text p, .maestro_text p, .master_text p{
+    padding-top: 10px;
+}
+/* Section 2 */
+.section_2{
+    width: 60%;
+    background-color: #fff;
+}
+.header_2{
+    /* border-bottom: 1px solid white; */
+}
+.header_2 h2:last-child{
+    float: right;
+}
+
+.lists{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.list_1{
+    border-top: 1px solid red;
+    margin-top: 30px;
+}
+.lists span:first-child{
+    float: left;
+    width: 10%;
+    vertical-align: middle;
+}
+.lists .purchase_details{
+    width: 70%;
+    float: left;
+}
+.lists span:last-child{
+    float: left;
+    width: 20%;
+    position: relative;
+}
+.lists span:last-child::after{
+    position: absolute;
+    content: "00";
+    top: -2px;
+    /* vertical-align: top; */
+    font-size: 10px;
+}
+.list_3 span:last-child::after{
+    content: "90";
+}
+.list_5 span:last-child::after{
+    content: "50";
+}
