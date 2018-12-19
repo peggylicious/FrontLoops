@@ -6,6 +6,7 @@
 }
 body{
     background-color: rgb(240, 209, 110);
+    font-family: Roboto, 'sans-serif';
 }
 .container{
     width: 60%;
@@ -68,32 +69,57 @@ header svg{
     background-size: 100%;
     background-position: center;
 }
-.visa_text, .maestro_text, .master_text{
-    /* padding-top: 20px; */
-}
-.visa_text p, .maestro_text p, .master_text p{
+
+.visa_text p,
+.maestro_text p,
+.master_text p{
     padding-top: 10px;
+}
+.expiry{
+    font-size: 14px;
 }
 /* Section 2 */
 .section_2{
     width: 60%;
     background-color: #fff;
 }
+.header_2 h2:first-child,
+.header_1 h2{
+    font-weight: 400;
+}
 .header_2{
-    /* border-bottom: 1px solid white; */
+    display: flex;
+    align-items: center;
 }
-.header_2 h2:last-child{
+.header_2 h2{
+    width: 80%;
+}
+/* .header_2 span:last-child{ */
+.header_2 span{
     float: right;
+    width: 20%;
+    position: relative;
+    text-align: center;
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 0 20px;
 }
-
+.header_2 h2:last-child::after{
+    position: absolute;
+    content: "00";
+    top: -2px;
+    /* vertical-align: top; */
+    font-size: 14px;
+    font-weight: 900;
+}
 .lists{
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 .list_1{
-    border-top: 1px solid red;
+    border-top: 1px solid grey;
     margin-top: 30px;
 }
 .lists span:first-child{
@@ -101,21 +127,41 @@ header svg{
     width: 10%;
     vertical-align: middle;
 }
+.lists span:first-child svg{
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+.purchase_details{
+    font-size: .8em;
+}
+.purchase_details p{
+    padding-top: 5px;
+    color: grey;
+}
 .lists .purchase_details{
     width: 70%;
     float: left;
 }
+
 .lists span:last-child{
     float: left;
     width: 20%;
     position: relative;
+    text-align: center;
+    margin: 0 20px;
+    font-weight: bold;
+    color: rgb(91, 31, 233);
 }
-.lists span:last-child::after{
+.lists span:last-child::after,
+.header_2 span::after{
     position: absolute;
     content: "00";
     top: -2px;
     /* vertical-align: top; */
     font-size: 10px;
+}
+.list_2 span:last-child{
+    color: rgb(20, 189, 96) !important;
 }
 .list_3 span:last-child::after{
     content: "90";
@@ -123,3 +169,11 @@ header svg{
 .list_5 span:last-child::after{
     content: "50";
 }
+.section .section_content::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+/* Handle */
+.section .section_content::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
