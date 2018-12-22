@@ -1,0 +1,55 @@
+header{
+    overflow: hidden;
+    width: 800px;
+    margin: 30px auto;
+    /* padding: 30px 20%; */
+    /* border: 1px solid black; */
+}
+header .logo{
+    height: 50px;
+    display: inline-block;
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 14px 16px;
+}
+header input{
+    padding-top: 16px;
+    padding-bottom: 5px;
+    /* margin-top: 25px; */
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    width: 150px;
+}
+header a{
+    /* background-color: green; */
+    float: left;
+    text-decoration: none;
+    color: grey;
+}
+.nav{
+    float: right;
+}
+.nav a{
+    margin-right: 32px;
+    padding: 14px 0;
+}
+
+.nav a:hover{
+    border-bottom: 1px solid black;
+    color: black;
+}
+input:focus{
+    color: black;
+    border-bottom-color: black;
+    /* display: none; */
+}
+body:focus-visible input{
+    color: red;
+}
+/* input:focus:not(:focus-visible){
+    color: blue;
+} */

@@ -1,0 +1,18 @@
+@import url('header.css');
+@import url('section_1.css');
+@import url('section_2.css');
+@import url('section_3.css');
+@import url('footer.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.health button:hover, .sport_band button:hover, .freedom_calls button:hover{
+    background-color: rgb(224, 8, 37);
+    cursor: pointer;
+}
