@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(177, 84, 100);
+    font-family: Roboto, sans-serif;
+    overflow: hidden;
+}
+header{
+    margin-left: 200px;
+    padding-top: 30px;
+    display: block;
+    width: 100vw;
+}
+header h1{
+    display: inline-block;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 30px;
+}
+header h1:first-child{
+    color: white;
+}
+header h1:not(:first-child){
+    color: rgba(255, 255, 255, .3)
+}
+.directions{
+    margin-left: 200px;
+    padding: 20px 0 40px 0;
+    color: white;
+}
+.regulator_box{
+    position: relative;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.left{
+    position: absolute;
+    background-color: rgba(255, 255, 255, .3);
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: -100px;
+}
+.left span{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    border-top: 7px solid rgb(177, 84, 100);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+.right{
+    position: absolute;
+    background-color: rgba(255, 255, 255, .3);
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: -100px;
+}
+.right span{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    border-top: 7px solid rgb(192, 59, 81);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+.regulator_box .timer, .regulator_box .temperature, .regulator_box .load{
+    float: left;
+    width: 33.33%;
+    padding: 100px 0 100px 40px;
+    background-color: rgba(0, 0, 0);
+    position: relative;
+}
+.timer div, .temperature div, .load div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.timer div{
+    background-color: rgba(255, 255, 255, .08);
+}
+.temperature div{
+    background-color: rgba(255, 255, 255, 0.06);
+}
+.load div{
+    background-color: rgba(0, 0, 0, .1);
+}
+.timer p:nth-child(2),
+.temperature p:nth-child(2),
+.load p:nth-child(2){
+    color: rgb(177, 84, 100);
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.timer p:nth-child(3),
+.temperature p:nth-child(3),
+.load p:nth-child(3){
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+button{
+    height: 50px;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 14px 16px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #000;
+    border-radius: 3px;
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.body_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .1);
+    height: 100%;
+    width: 100%;
+}
