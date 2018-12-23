@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto, sans-serif;
+    background-color: #000;
+}
+.container{
+    width: 500px;
+    background-color: rgb(241, 220, 28);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 60px;
+}
+header{
+    position: relative;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+/* Close header */
+header span:last-child{
+    display: inline-block;
+    height: 3px;
+    width: 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+header span:last-child:before, header span:last-child:after{
+    content: "";
+    height: 3px;
+    width: 15px;
+    background-color: rgb(90, 82, 7);
+    position: absolute;
+}
+header span:last-child:before{
+    transform: rotate(45deg);
+}
+header span:last-child::after{
+    transform: rotate(-45deg);
+}
+.close:hover span:last-child:before,
+.close:hover span:last-child:after{
+    background-color: rgb(34, 31, 2);
+    cursor: pointer;
+}
+/* Form */
+.form_box{
+    width: inherit;
+    position: relative;
+    background-color: #fff;
+    margin: 30px 0 40px 0;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+}
+.form_box .placeholder{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    transform: translate(0, -50%);
+    background-image: url("./img/avatar.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.full_names{
+    overflow: hidden;
+}
+.f_name, .l_name{
+    float: left;
+    width: 50%;
+}
+.f_name input, .l_name input, .u_name input, .e_mail input, textarea{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: rgb(5, 4, 4);
+    border-bottom: 1px solid grey;
+    outline: none;
+}
+input{
+    color: #000;
+}
+input::placeholder{
+    color: rgb(43, 43, 43);
+    font-size: 12px;;
+}
+form{
+    padding: 50px 40px 20px 40px;
+}
+label{
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: rgb(128, 128, 128);
+    font-weight: 600;
+}
+input, label, textarea{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+}
+.full_names, .u_name, .e_mail{
+    padding-bottom: 20px;
+}
+/* Footer */
+footer{
+    position: fixed;
+    bottom: 30px;
+    /* Right same as padding-right of container */
+    right: 40px;
+    padding-top: 40px;
+    color: rgb(90, 82, 7);
+}
+footer span{
+    font-weight: 600;
+}
+footer span:first-child{
+    margin-right: 40px;
+}
+footer span:hover{
+    color: rgb(34, 31, 2);
+}

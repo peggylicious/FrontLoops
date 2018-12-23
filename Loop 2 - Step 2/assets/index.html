@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    FYI:
+    Textarea resize in the design is a native feature of browsers.
+    Also there is no close icon in the assets, so you should try to find another way of implementing it.
+  -->
+  <div class="container">
+    <header>
+      <span class="title">Account Settings</span>
+      <div class="close">
+        <span></span>
+      </div>
+    </header>
+    <div class="form_box">
+      <div class="placeholder"></div>
+      <form action="">
+        <div class="u_name">
+          <label for="username">USERNAME</label>
+          <input type="text" name="user_name" id="username" placeholder="Enter your username">
+        </div>
+        <div class="full_names">
+          <div class="f_name">
+              <label for="firstname">First Name</label>
+              <input type="text" name="first" id="firstname" placeholder="Enter your first name">
+          </div>
+          <div class="l_name">
+              <label for="lastname">Last Name</label>
+              <input type="text" name="last" id="lastname" placeholder="Enter your last name">
+          </div>
+        </div>
+        <div class="e_mail">
+          <label for="email">E-mail</label>
+          <input type="email" name="e-mail" id="email" placeholder="Enter your email">
+        </div>
+        <div class="">
+          <label for="msg">Bio</label>
+          <textarea name="message" id="msg" cols="30" rows="10" placeholder="Tell us about yourself"></textarea>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <span>Cancle</span><span>Save</span>
+    </footer>
+  </div>
+</body>
+</html>
