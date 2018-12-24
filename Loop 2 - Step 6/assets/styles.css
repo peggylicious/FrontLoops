@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+}
+.days span{
+    color: grey;
+    font-weight: 600;
+}
+.week, .days{
+    position: relative;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+}
+.week span, .days span{
+    /* display: inline-block; */
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    /* justify-content: center; */
+}
+.overlay{
+    background-color: rgba(255, 255, 255, .4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/* The nth:child is numbered so because the overlay div is the first child */
+.week_1 span:nth-child(6),
+.week_1 span:nth-child(7),
+.week_1 span:nth-child(8){
+    z-index: 1;
+}
+.week_3 span:nth-child(6), .week_4 span:nth-child(2){
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid red;
+    /* align-items: flex-start; */
+}
+span small{
+    /* display: inline-block;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    line-height: initial;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    text-align: center; */
+}
+.week_2 span:nth-child(4){
+    background-color: red;
+    border-radius: 50%;
+}
+.week_3 span:nth-child(6)::before, .week_4 span:nth-child(2)::before{
+    content: "6";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+.week_4 span:nth-child(2)::before{
+    content: "5";
+}
