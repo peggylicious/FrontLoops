@@ -4,12 +4,43 @@
     box-sizing: border-box;
     /* border: 1px solid black; */
 }
+body{
+    background-color: rgb(74, 209, 209);
+    font-family: Roboto, sans-serif;
+}
 .container{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    background-color: #fff;
+}
+header{
+    border-bottom: 1px solid rgba(128, 128, 128, .3);
+}
+header, footer{
+    display: flex;
+    font-display: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    color: grey;
+    font-weight: 500;
+}
+header span, footer span{
+    height: 50px;
+    line-height: 50px;
+}
+header span:first-child,
+header span:last-child,
+footer span:first-child,
+footer span:last-child{
+    padding: 0 20px;
+}
+/* Container_1 */
+.container_1{
+    padding: 0 20px;
 }
 .days span{
     color: grey;
@@ -18,16 +49,13 @@
 .week, .days{
     position: relative;
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
 }
 .week span, .days span{
-    /* display: inline-block; */
     width: 50px;
     text-align: center;
     height: 50px;
     line-height: 50px;
-    /* justify-content: center; */
 }
 .overlay{
     background-color: rgba(255, 255, 255, .4);
@@ -35,32 +63,30 @@
     width: 100%;
     position: absolute;
 }
+.week_1 span{
+    color: rgba(128, 128, 128, .5);
+}
 /* The nth:child is numbered so because the overlay div is the first child */
 .week_1 span:nth-child(6),
 .week_1 span:nth-child(7),
 .week_1 span:nth-child(8){
     z-index: 1;
-}
-.week_3 span:nth-child(6), .week_4 span:nth-child(2){
-    border-radius: 50%;
-    position: relative;
-    border: 2px solid red;
-    /* align-items: flex-start; */
-}
-span small{
-    /* display: inline-block;
-    position: absolute;
-    top: -5px;
-    right: 0;
-    line-height: initial;
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    text-align: center; */
+    color: #000;
 }
 .week_2 span:nth-child(4){
     background-color: red;
     border-radius: 50%;
+    color: white;
+}
+.week_3 span:nth-child(6){
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid red;
+}
+.week_4 span:nth-child(2){
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid purple;
 }
 .week_3 span:nth-child(6)::before, .week_4 span:nth-child(2)::before{
     content: "6";
@@ -73,7 +99,45 @@ span small{
     line-height: 20px;
     border-radius: 50%;
     font-size: 12px;
+    color: white;
 }
 .week_4 span:nth-child(2)::before{
     content: "5";
+    background-color: purple;
+}
+/* Revisit this style */
+span small{
+    /* display: inline-block;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    line-height: initial;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    text-align: center; */
+}
+
+/* Footer */
+footer{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    border: 1px solid rgba(128, 128, 128, .3)
+}
+footer span:nth-child(2){
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+footer span:nth-child(3){
+    position: relative;
+}
+footer span:nth-child(3) small{
+    position: relative;
+    top: -6px;
+    font-size: 6px;
 }
