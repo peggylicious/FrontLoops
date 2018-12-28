@@ -22,7 +22,7 @@ body{
     height: 100%;
 }
 .section_1{
-    background-color: blue;
+    background-color: grey;
     width: 40%;
     background-image: url("./img/background.jpg");
     background-repeat: no-repeat;
