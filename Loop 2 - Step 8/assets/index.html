@@ -9,6 +9,73 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+  <div class="container center">
+    <div class="top"></div>
+    <h3>CARD</h3>
+    <div class="middle"></div>
+    <div class="bottom">
+      <div class="bottom_inner">
+        <div class="about_container">
+          <div class="lock"></div>
+          <div class="about">
+            <h4>Lock card</h4>
+            <p>You can unlock it later</p>
+          </div>
+        </div>
+        <div class="right"><div class="right_inner one"></div></div>
+      </div>
+      <div class="bottom_inner">
+        <div class="about_container">
+          <div class="plane"></div>
+          <div class="about">
+            <h4>Payments abroad</h4>
+            <p>Enable your card abroad</p>
+          </div>
+        </div>
+        <div class="right"><div class="right_inner two"></div></div>
+      </div>
+      <div class="bottom_inner">
+        <div class="about_container">
+          <div class="laptop"></div>
+          <div class="about">
+            <h4>Online payments</h4>
+            <p>Enable online transactions</p>
+          </div>
+        </div>
+        <div class="right"><div class="right_inner three"></div></div>
+      </div>
+      <div class="bottom_inner">
+        <div class="about_container">
+          <div class="money"></div>
+          <div class="about">
+            <h4>ATM withdrawals</h4>
+            <p>Enable ATM withdrawals</p>
+          </div>
+        </div>
+        <div class="right"><div class="right_inner four"></div></div>
+      </div>
+    </div>
+  </div>
 
+  <script>
+    let button = document.querySelectorAll('.right_inner'),
+        button_container = document.querySelectorAll('.right');
+
+        document.addEventListener('click', function(event ){
+          for(let i = 0; i < button.length; i++){
+            if(button[i] == event.target){
+              console.log(getComputedStyle(button[i]).left);
+              if(getComputedStyle(button[i]).left == "2px"){
+                console.log("I am 2px left");
+                button[i].style.left = "22px";
+                button_container[i].style.backgroundColor = "rgb(26, 141, 235)";
+              }else{
+                button[i].style.left = "2px";
+                button_container[i].style.backgroundColor = "#fff";
+              }
+            }
+          }
+        })
+  </script>
 </body>
 </html>
