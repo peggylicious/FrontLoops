@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+body{
+    font-family: Roboto, sans-serif;
+    background-color: rgb(26, 141, 235);
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    width: 414px;
+    height: 600px;
+    position: absolute;
+    background-color: #fff;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 20px 20px 0 20px;
+}
+
+/* Push Out */
+.push_out_container{
+    height: 120px;
+    margin-top: 10px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 141, 235, .6);
+    z-index: -1;
+}
+/* Map */
+.push_out{
+    position: absolute;
+    /* margin: 0 -20px 0 -30px; */
+    height: inherit;
+    width: 434px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    background-image: url("./img/map.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    border-radius: 2px;
+}
+.to_fro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 30px 0 30px;
+}
+.dist_time{
+    padding: 10px 40px 0 30px;
+}
+.dist_time span:first-child{
+    padding-right: 80px;
+}
+.to_fro, .dist_time{
+    color: #fff;
+    font-size: 14px;
+}
+.mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.line_1{
+    position: relative;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+.line_1:before, .line_2:after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.line_1:before{
+    left: -5px;
+}
+.line_2:after{
+    right: -5px;
+}
+.line_1 svg{
+    position: absolute;
+    right: 0;
+    top: -20px;
+    transform: translateX(50%);
+}
+
+/* Line 2 */
+.line_2{
+    position: relative;
+    width: 150px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .4);
+}
+/* Push out Button */
+.push_out button{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    transform: translateY(50%);
+    background-color: rgb(26, 141, 235);
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 2px;
+}
+.push_out button span{
+    padding-left: 10px;
+}
+.about_place{
+    position: relative;
+    padding: 30px 20px 0 20px;
+}
+.about_place h4{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.about_hamburg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 10px 0 10px;
+}
+.fourth{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.about_place .third{
+    padding-bottom: 25px;
+}
+.description{
+    padding-left: 30px;
+}
+.description p:first-child{
+    font-size: 12px;
+    color: grey;
+}
+.description p:last-child{
+    font-size: 14px;
+    font-weight: 600;
+}
+/* Street View */
+.street_view{
+    position: relative;
+    right: 0;
+    height: 10%;
+    background-image: url("./img/streetview.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+.street_view svg{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
