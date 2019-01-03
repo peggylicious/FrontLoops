@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+body{
+    font-family: Roboto, sans-serif;
+    background-color: rgb(26, 141, 235);
+    /* margin: 0 50px; */
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.display_flex{
+    display: flex;
+    flex-direction: row;
+}
+/* Top Nav */
+header{
+    width: 100%;
+    border-bottom: 2px solid red;
+}
+.top_nav{
+    height: 50px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.top_nav .top_nav_left,
+.top_nav .top_nav_right{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.top_nav .top_nav_mid{
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top_nav .top_nav_left{
+    justify-content: flex-end;
+}
+.top_nav .top_nav_right{
+    justify-content: flex-start;
+}
+.wrapper{
+}
+.wrapper .left_nav, .wrapper .right_nav{
+    width: 25%;
+    background-color: #0f0;
+    height: 50px;
+}
+.container{
+    width: 50%;
+    background-color: #fff;
+}
+/* Left Nav */
+input{
+    height: 30px;
+    width: 100px;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+}
+.linkdin_logo{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-color: red;
+}
+/* .search_box{
+    float: right;
+    height: 50px;
+    position: relative;
+    position: relative;
+} */
+.search_box{
+    height: 50px;
+    align-items: center;
+    align-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+.search_box span{
+    background-color: #fff;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.material-icons.md-18 { font-size: 18px; }
+
+/* Right Nav */
+.top_nav_right .contact{
+    align-items: center;
+    height: 50px;
+}
+.top_nav_right .contact div, .top_nav_right .contact_photo{
+    height: 30px;
+    width: 30px;
+    /* justify-content: space-around; */
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+}
+.top_nav_right .contact div{
+    background-color: green;
+}
+.top_nav_right .contact_photo{
+    border-radius: 50%;
+    background-color: yellow;
+}

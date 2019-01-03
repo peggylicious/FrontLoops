@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: .05px solid black; */
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Roboto, sans-serif;
+    background-color: rgb(2, 38, 66);
+    font-size: 16px;
+    /* margin: 0 5px; */
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.display_flex{
+    display: flex;
+}
+.flex_align_center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h2{
+    font-size: 2em;
+}
+header{
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 50px;
+    align-items: center;
+}
+.picture{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/avatar.jpg");
+    border-radius: 50%;
+    display: none;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/logo.png");
+}
+.menu{
+    align-items: center;
+    padding: 10px;
+}
+.menu span{
+    position: relative;
+    width: 15px;
+    height: 3px;
+    background-color: #46abfd;
+}
+
+.menu span::before, .menu span::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    background-color: #46abfd;
+}
+.menu span::before{
+    top: -5px;
+}
+.menu span::after{
+    top: 5px;
+}
+
+/* Connections */
+.connections{
+    padding: 20px 0;
+}
+.connections .avatar_profile{
+    position: relative;
+}
+.avatar_profile .avatar{
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/bill-gates-avatar.png");
+    border-radius: 50%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.avatar_profile .connect{
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+.avatar_profile .connect button{
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+.avatar_profile .name h3{
+    padding: 5px 0 0px 0;
+    font-size: 16px;
+    color: #fff;
+}
+.avatar_profile .name .location{
+    padding: 10px 0;
+    color: #808080;
+    font-size: 13px;
+
+}
+.avatar_profile .name p{
+    font-size: 12px;
+    color: #46abfd;
+}
+.connect button:first-child{
+    background-color: #46abfd;
+    color: white;
+}
+.connect button:last-child{
+    background-color: rgb(2, 38, 66);
+    color: #46abfd;
+    border: 1px solid #46abfd;
+}
+/* Connections Fans */
+.fans, .connections .link{
+    overflow: hidden;
+    font-size: 10px;
+}
+.fans .numb_connections, .fans .followers,
+.link .linkdin, .link .website
+{
+    float: left;
+}
+.fans span b{
+    color: white;
+}
+.link .website, .fans .followers{
+    padding-left: 15px;
+}
+.linkdin i, .website i, .copy_file i{
+    margin: 5px 2px;
+    color: #808080;
+    /* font-size: 13px; */
+    font-size: 13px;
+}
+.link a, .copy_file a{
+    margin: 5px 2px;
+    color: #808080;
+    /* font-size: 13px; */
+    font-size: 10px;
+}
+.numb_connections span:last-child, .followers span:last-child{
+    color: #808080;
+    padding-left: 5px;
+}
+/* Second Header (header_2 class) */
+.header_2{
+    border-bottom: 1px solid #808080;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_2 a{
+    text-decoration: none;
+    padding: 10px 0;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    font-size: .69em;
+    color: #808080;
+    font-weight: 600;
+
+    /* padding: 14px .3em; */
+}
+.header_2 a:hover{
+    border-bottom: 2px solid #46abfd;
+    color: #46abfd;
+}
+
+
+
+
+
+
+
+
+/* *{ */
+    /* box-sizing: border-box; */
+    /* border: 1px solid black;
+} */
+/* #page {
+    margin: 40px auto;
+    padding: 0 1em;
+    max-width: 988px;*/      /* 988px / 16px = 61.75em */
+/* } */
+
+/* h1 {
+    margin-left: 14.575%;*/    /* 144px / 988px = 0.14575 */
+    /*width: 70.85%; */          /* 700px / 988px = 0.7085 */
+/* } */
+
+
+/* .entry h2,
+.entry .content {
+    float: right;
+    width: 85.425%;*/          /* 844px / 988px = 0.85425 */
+/* }.entry .info {
+    float: left;
+    width: 12.551%; */         /* 124px / 988px = 0.12551 */
+/* } */
