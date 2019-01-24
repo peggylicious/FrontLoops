@@ -34,6 +34,7 @@ a{
     margin-top: -25px;
     position: relative;
     border-radius: 3px;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
 }
 h1{
     width: 80%;
@@ -58,12 +59,7 @@ h1{
 }
 .shoes span{
     position: relative;
-    left: 160px;
-    top: 33%;
-}
-/* .shoes span,
-.shoes span::before,
-.shoes span::after{
+
     width: 25px;
     height: 25px;
     display: block;
@@ -73,29 +69,27 @@ h1{
     background-color: #5429F2;
     color: #fff;
     font-weight: 800;
+    transition: box-shadow .256s;
 }
-.shoes span::before,
-.shoes span::after{
-    content: "+";
-    position: absolute;
+.shoes .select_1{
+    /* background-color: green; */
+    top: 45px;
+    left: 85px;
 }
-.shoes span:before{
-    left: -75px;
-    top: -135px;
+.shoes .select_2{
+    left: 162px;
+    top: 29%;
 }
-.shoes span:after{
-    left: 145px;
-    top: 40px;
+.shoes .select_3{
+    /* background-color: black; */
+    top: 170px;
+    left: 70%;
 }
-.shoes span:hover:first-child{
-    background-color: #fff;
-} */
-/* .shoes span:hover,
-.shoes span:hover:before,
-.shoes span:hover:after{
-    cursor: pointer;
+.shoes span:hover{
     box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
-} */
+    /* background-color: #fff; */
+}
+
 .next_slide{
     display: flex;
     justify-content: center;
@@ -130,6 +124,7 @@ h1{
     width: 55%;
     display: flex;
     align-items: center;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
 }
 .wrapper{
     background-color: #fff;
