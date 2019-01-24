@@ -87,6 +87,7 @@ h1{
 }
 .shoes span:hover{
     box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
     /* background-color: #fff; */
 }
 
@@ -197,7 +198,7 @@ h1{
     color: #E74C3C;
     font-weight: 700;
 }
-.amount span:last-child{
+.amount p{
     position: relative;
     /* background-color: blue; */
     font-size: 1.3em;
@@ -205,7 +206,10 @@ h1{
     color: #000;
     font-weight: 500;
 }
-.amount span:last-child::before{
+.amount p span{
+    transition: opacity .256s;
+}
+.amount p span:first-child{
     position: absolute;
     content: "";
     top: 50%;
@@ -215,7 +219,7 @@ h1{
     border-right: 5px solid #E26796;
     border-top: 5px solid transparent;
 }
-.amount span:last-child::after{
+.amount p span:last-child{
     position: absolute;
     content: "";
     top: 50%;
@@ -225,4 +229,8 @@ h1{
     border-right: 5px solid #E26796;
     border-top: 5px solid transparent;
 
+}
+.amount p span:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
