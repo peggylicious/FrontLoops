@@ -1,0 +1,233 @@
+@import url("button.css");
+@import url();
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #4D26E6;
+    font-family: Roboto, "sans-serif";
+
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -400px; /* For fixed width centering */
+    background-color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.product_page{
+    float: left;
+    background-color: #E26796;
+    height: 550px;
+    width: 45%;
+    margin-top: -25px;
+    position: relative;
+    border-radius: 3px;
+}
+h1{
+    width: 80%;
+    margin: -60px auto;
+    text-align: center;
+    font-size: 16em;
+    padding: 0;
+    color: #E987AB;
+}
+.shoes{
+    position: absolute;
+    top: 24%;
+    left: -75px;
+    width: 120%;
+    height: 100%;
+    /* background-color: green; */
+    background-image: url("./img/preview.png");
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: -20px -10px;
+    /* padding: 100px */
+}
+.shoes span{
+    position: relative;
+    left: 160px;
+    top: 33%;
+}
+/* .shoes span,
+.shoes span::before,
+.shoes span::after{
+    width: 25px;
+    height: 25px;
+    display: block;
+    line-height: 25px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #5429F2;
+    color: #fff;
+    font-weight: 800;
+}
+.shoes span::before,
+.shoes span::after{
+    content: "+";
+    position: absolute;
+}
+.shoes span:before{
+    left: -75px;
+    top: -135px;
+}
+.shoes span:after{
+    left: 145px;
+    top: 40px;
+}
+.shoes span:hover:first-child{
+    background-color: #fff;
+} */
+/* .shoes span:hover,
+.shoes span:hover:before,
+.shoes span:hover:after{
+    cursor: pointer;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+} */
+.next_slide{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    /* transform: translateY(25%); */
+    width: 100%;
+}
+.next_slide span{
+    background-color: #E987AB;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 10px;
+}
+.next_slide span:nth-child(2){
+    background-color: #fff;
+}
+.next_slide span:hover{
+    background-color: #fff;
+}
+.product_page .logo{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+.about_product{
+    float: right;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    background-color: #fff;
+    padding: 0 30px;
+}
+.about_product h2{
+    font-size: 2.5em;
+}
+.price{
+    font-size: 1.5em;
+    /* background-color: red; */
+    position: relative;
+    margin: 10px 0;
+}
+.price:after{
+    content: "$259.00";
+    font-size: .6em;
+    position: absolute;
+    top: 4px;
+    margin-left: 10px;
+    color: #808080;
+}
+.description{
+    margin: 20px 0;
+    font-size: .9em;
+    /* white-space: nowrap */
+}
+
+.size, .amount {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    color: #808080;
+}
+
+.size span, .amount span:first-child{
+    width: 30%;
+    background-color: #fff;
+}
+.size span{
+    width: 25%;
+    margin-right: 10px;
+}
+.size .size_selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+.size_selection a{
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 20px;
+    color: #808080;
+    font-size: 1.3em;
+    border-radius: 0;
+    transition: color .256s, border-radius .256s;
+}
+.size_selection a:last-child{
+    height: 30px;
+    width: 60px;;
+    line-height: initial;
+    transition: none;
+}
+.size_selection a:active{
+    border-radius: 50px;
+    border: 1px solid #E74C3C;
+    color: #E74C3C;
+    font-weight: 700;
+}
+.amount span:last-child{
+    position: relative;
+    /* background-color: blue; */
+    font-size: 1.3em;
+    margin-left: 10px;
+    color: #000;
+    font-weight: 500;
+}
+.amount span:last-child::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #E26796;
+    border-top: 5px solid transparent;
+}
+.amount span:last-child::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    right: -15px;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #E26796;
+    border-top: 5px solid transparent;
+
+}
