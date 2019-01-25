@@ -1,0 +1,419 @@
+.main-section{
+    /* background-color: green; */
+    /* position: relative; */
+}
+
+.main-header{
+    height: 50px;
+    line-height: 50px;
+    background-color: dodgerblue;
+}
+.main-header .wrapper{
+    width: 80%;
+    margin: 0 auto;
+    background-color: brown;
+}
+.user{
+    /* background-color: yellow; */
+    background-color: rgb(7, 27, 46);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.user .friend_request{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.user button{
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid black;
+}
+.user .follow{
+    background-color: #5EB5E6;
+}
+.user img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.user p{
+    color: dodgerblue;
+}
+.user .friends{
+    display: flex;
+}
+.pages div{
+    display: flex;
+    align-items: center;
+}
+.friends span{
+    font-size: .7em;
+    color: #fff;
+}
+.friends .followers{
+    margin-left: 10px;
+}
+.friends span:first-child{
+    /* font-weight: bold; */
+}
+.user_content{
+    background-color: purple;
+    padding: 0 10px;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+}
+.views{
+    background-color: pink;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+}
+
+.user_content .activity{
+    background-color: #fff;
+}
+
+.post .article{
+    background-color: red;
+    margin: 0 auto;
+}
+.article img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+}
+.article p{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+/* Background */
+.activity
+.bg_wrapper{
+    display: flex;
+}
+.bg_wrapper .bg_art{
+    margin-left: 10px;
+}
+.bg_wrapper i, .bg_art_title{
+    padding: 10px 0;
+}
+.bg_art > p:first-child{
+    font-size: 20px;
+    font-weight: 500;
+}
+.bg_art .bg_art_wrapper{
+    position: relative;
+    width: 3px;
+    height: 100px;
+    background-color: blue;
+    margin: 20px 0;
+}
+.bg_art_wrapper .present{
+    background-color: #fff;
+    width: 200px;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+
+}
+.bg_art_wrapper .previous{
+    background-color: green;
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+}
+
+.bg_art_wrapper:before, .bg_art_wrapper:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bg_art_wrapper:before{
+    top: -10px;
+}
+.bg_art_wrapper:after{
+    bottom: -10px;
+}
+.bg_art_skills{
+    background-color: red;
+    width: 100%;
+}
+.education, .skills/*, .interests*/{
+    margin-top: 50px;
+}
+
+/* Skills */
+
+.social_media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social_media span{
+    line-height: 50px;
+     border: 1px solid black;
+    text-align: center;
+}
+.people img, .social_media span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+/* Quote */
+.recommendations{
+    padding: 0 20px;
+}
+.quote .message{
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+}
+.quote .message:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 50px solid black;
+    border-right: 50px solid transparent;
+    /* border-bottom: 25px solid black; */
+}
+.quote img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.quote .quote_author{
+    display: flex;
+    align-items: center;
+}
+
+/* Following */
+
+.following{
+    display: flex;
+}
+.following .sponsors_wrapper{
+    width: 25%;
+    margin: 0 10px;
+}
+.following .sponsors{
+    background-color: white;
+    /* margin: 0 10px; */
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+}
+.sponsors img{
+    height: 70px;
+    width: 100%;
+    object-fit: contain;
+}
+.sponsors_wrapper p{
+    background-color: green;
+    padding: 10px 0;
+}
+.sponsors_wrapper p span{
+    display: inline-block;
+    width: 20px;
+    border: 1px solid blue;
+    height: 20px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+/* Viewed */
+
+.viewed{
+    display: flex;
+    align-items: center;
+}
+.viewed img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.more_influ{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+.more_influ img{
+    border-radius: 100%;
+}
+.more_influ span{
+    position: relative;
+    background-color: red;
+    width: 10px;
+    height: 30px;
+    transform: translateY(100%);
+}
+.more_influ span:after, .more_influ span:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 3px;
+}
+.more_influ span:first-child::before{
+    background-color: #000;
+    top: 50%;
+    transform: translateY(50%) rotate(45deg);
+}
+.more_influ span:first-child:after{
+    background-color: #000;
+    transform: translateY(-50%) rotate(-45deg);
+    bottom: 50%;
+}
+.more_influ span:last-child::before{
+    background-color: #000;
+    top: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+.more_influ span:last-child:after{
+    background-color: #000;
+    bottom: 50%;
+    transform: translateY(-50%) rotate(45deg);
+
+}
+footer{
+    /* height: 50px; */
+    /* line-height: 50px; */
+    background-color: brown;
+    border-top: 1px solid #808080;
+    padding: 10px 0;
+}
+footer small{
+    display: inline-block;
+    /* width: 10px;
+    height: 10px; */
+    padding: 2px 2px;
+    /* line-height: 10px; */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 100%;
+    font-size: 10px;
+}
+@media only screen and (min-width: 600px){
+    .main-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 50px auto 0 auto;
+        padding: 10px 0;
+        width: 80%;
+        overflow: hidden;
+    }
+    .main-header{
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+    }
+    .user button{
+        width: 80%;
+    }
+    .user .friend_request{
+        position: static;
+    }
+    .user{
+        width: 30%;
+    }
+    .user_content{
+        width: 65%;
+    }
+    .views{
+        width: 20%;
+        flex: 1;
+    }
+    .user .friends div{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-header + .user_content{
+        margin-left: 5%;
+    }
+}
+@media only screen and (min-width: 768px){
+
+}
+@media only screen and (min-width: 1020px){
+    .main-section{
+        display: block;
+        overflow: hidden;
+    }
+    .pages div i{
+        font-size: 15px;
+    }
+    .pages div span,
+    .friends span{
+        font-size: 13px;
+    }
+    .user_content{
+        width: 60%;
+        float: left;
+    }
+    .user, .views{
+        width: 18%;
+    }
+    .user{
+        float: left;
+    }
+    .views{
+        float: right;
+    }
+    .main-header + .user_content{
+        margin: 0 2%;
+    }
+    .activity .post{
+        display: flex;
+        justify-content: space-around;
+    }
+    .post .article{
+        padding: 0 5px;
+    }
+    .article img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        /* margin: 0 5px; */
+        /* height: 100%; */
+        overflow: hidden;
+    }
+    .article p{
+        width: 100%;
+        text-align: left;
+    }
+    /* .img_wrapp{
+        height: 200px;
+        background-color: yellow;
+        overflow: hidden;
+    }
+    .im_1{
+        object-fit: cover;
+    } */
+    /* } */
+    /* .user{
+        width: 20%;
+    }
+    .user_content{
+        width: 80%;
+    }
+    .views{
+        width: 20%;
+        flex: 1;
+    } */
+}

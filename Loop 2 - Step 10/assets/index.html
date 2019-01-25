@@ -29,248 +29,312 @@
 
     And good luck!
   -->
-  <header class="display_flex">
-    <div class="menu display_flex"><span></span></div>
-    <div class="profile picture"></div>
-    <div class="logo picture"></div>
-  </header>
-  <div class="container">
-    <div class ="connections">
-      <div class="avatar_profile">
-        <div class="avatar"></div>
-        <div class="name">
-          <h3>Bill Gates</h3>
-          <p>@Microsoft Founder</p>
-          <p class="location">Greater Seattle Area</p>
+
+  <header class="">
+    <div class="header">
+      <div class="logo"><img src="./img/logo.png" alt=""></div>
+      <div class="menu nohover">
+        <div class="ham" id="ham">
+          <span class="hamburger"></span><!--Hamburger Menu-->
+          <div class="flyover" id="fly">
+            <div class="search"><input type="text"></div>
+            <div class="links">
+                <a href="https://peggylicious.github.io">Home</a>
+                <a href="">Profile</a>
+                <a href="">Connections</a>
+                <a href="#">Interests</a>
+                <a href="#">Try Premium</a>
+            </div>
+            <div class="social">
+              <i class="material-icons">comment</i>
+              <i class="material-icons">notifications</i>
+              <i class="material-icons">person_add</i>
+            </div>
+          </div>
         </div>
-        <div class="connect">
-          <button>Follow</button>
-          <button>Connect <span></span></button>
-        </div>
+
       </div>
-      <!-- <div class="about"></div> -->
-      <div class="fans">
-        <div class="numb_connections">
-          <span><b>200</b></span><span>connections</span>
-        </div>
-        <div class="followers">
-          <span><b>1.9M</b></span><span>followers</span>
-        </div>
-      </div>
-      <div class="link">
-        <div class="linkdin flex_align_center"><i class="material-icons">link</i><a href="#" class="linkdin_avatar">linkedin.com/in/billgat...</a></div>
-        <div class="website flex_align_center"><i class="material-icons">language</i><a href="#" class="website_avatar">billgates.com</a></div>
-      </div>
-      <div class="copy_file flex_align_center">
-          <i class="material-icons">get_app</i><a href="#" class="export_avatar">Export page as PDF</a>
-      </div>
+      <div class="profile"><img src="./img/avatar.jpg" alt=""></div>
     </div>
-    <div class="header_2">
+  </header>
+  <!-- </div> -->
+  <div class="container">
+    <!-- <div class="header_2 large_screen">
       <a href="">Posts</a>
       <a href="">Background</a>
       <a href="">Recommendations</a>
       <a href="">Following</a>
-    </div>
+    </div> -->
     <div class="main">
-      <section class="post">
-        <div class="title">
-          <h4>POSTS</h4>
-        </div>
-        <div class="post_1">
-          <div class="photo photo_1"></div>
-          <div class="about_photo">
-            <h5>3 Myths That Confuse Top-Managers</h5>
-            <p class="date">Feburary 19, 2016</p>
-          </div>
-        </div>
-        <div class="post_2">
-          <div class="photo photo_2"></div>
-          <div class="about_photo">
-            <h5>How much do we spend on hot drinks</h5>
-            <p class="date">Feburary 19, 2016</p>
-          </div>
-        </div>
-        <div class="post_3">
-          <div class="photo photo_3"></div>
-          <div class="about_photo">
-            <h5>Good news you might have noticed</h5>
-            <p class="date">Feburary 19, 2016</p>
-          </div>
-        </div>
-      </section>
-      <section class="background">
-        <div class="title">
-          <h4>BACKGROUND</h4>
-        </div>
-        <div class="summary">
-          <div class="headline">
-            <i class="material-icons">
-            assignment
-            </i>
-            <span>Summary</span>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus cumque molestias explicabo nostrum consectetur iusto voluptate dolorem? Sint laboriosam quibusdam a deleniti vero soluta? Optio dicta minima voluptate amet?</p>
-        </div>
-        <div class="experience">
-          <div class="headline">
-            <i class="material-icons">
-            assignment
-            </i>
-            <span>Experience</span>
-          </div>
-          <div class="years">
-            <div class="period">
-              <div class="line_1"></div>
-              <div class="present_role">
-                <div class="role role_1">
-                  <p class="date">2000 - PRESENT</p>
-                  <p class="founder">Co-founder, Chairman</p>
-                  <p class="company">Microsoft</p>
-                </div>
-                <div class="ms_logo"><div></div></div>
-              </div>
+      <div class="main_left">
+        <div class ="connections">
+          <div class="avatar_profile">
+            <div class="avatar"></div>
+            <div class="name">
+              <h3>Bill Gates</h3>
+              <p>@Microsoft Founder</p>
+              <p class="location">Greater Seattle Area</p>
             </div>
-            <div class="period">
-              <div class="line_2"></div>
-              <div class="previous_role">
-                <div class="role role_1">
-                  <p class="date">2000 - PRESENT</p>
-                  <p class="founder">Senior Developer</p>
-                  <p class="company">Youtube</p>
-                </div>
-                <div class="youtube_logo"><div></div></div>
-              </div>
+            <div class="connect">
+              <button>Follow</button>
+              <button>Connect <span></span></button>
             </div>
           </div>
-        </div>
-        <div class="education">
-          <div class="headline">
-            <i class="material-icons">
-            assignment
-            </i>
-            <span>Education</span>
-          </div>
-          <div class="years">
-            <div class="period">
-              <div class="line_1"></div>
-              <div class="present_role">
-                <div class="role role_1">
-                  <p class="date">2000 - PRESENT</p>
-                  <p class="founder">Co-founder, Chairman</p>
-                  <p class="company">Microsoft</p>
-                </div>
-                <!-- <div class="ms_logo"><div></div></div> -->
-              </div>
+          <!-- <div class="about"></div> -->
+          <div class="fans">
+            <div class="numb_connections">
+              <span><b>200</b></span><span>connecti...</span>
             </div>
-            <div class="period">
-              <div class="line_2"></div>
-              <div class="previous_role">
-                <div class="role role_1">
-                  <p class="date">2000 - PRESENT</p>
-                  <p class="founder">Senior Developer</p>
-                  <p class="company">Youtube</p>
-                </div>
-                <!-- <div class="youtube_logo"><div></div></div> -->
-              </div>
+            <div class="followers">
+              <span><b>1.9M</b></span><span>followers</span>
             </div>
           </div>
+          <div class="page_link">
+            <div class="linkdin flex_align_center"><i class="material-icons">link</i><a href="#" class="linkdin_avatar">linkedin.com/in/billgat...</a></div>
+            <div class="website flex_align_center"><i class="material-icons">language</i><a href="#" class="website_avatar">billgates.com</a></div>
+          </div>
+          <div class="copy_file flex_align_center">
+              <i class="material-icons">get_app</i><a href="#" class="export_avatar">Export page as PDF</a>
+          </div>
         </div>
-        <div class="skills">
+      </div>
+      <div class="header_2 small_screen">
+        <a href="">Posts</a>
+        <a href="">Background</a>
+        <a href="">Recommendations</a>
+        <a href="">Following</a>
+      </div>
+      <div class="main_mid">
+        <section class="post">
+            <div class="title">
+              <h4>POSTS</h4>
+            </div>
+            <div class="post_container">
+              <div class="post_1">
+                <div class="photo photo_1"><img src="./img/article1.jpg" alt=""></div>
+                <div class="about_photo">
+                  <h5>3 Myths That Confuse Top-Managers</h5>
+                  <p class="date">Feburary 19, 2016</p>
+                </div>
+              </div>
+              <div class="post_2">
+                <div class="photo photo_2"><img src="./img/article2.jpg" alt=""></div>
+                <div class="about_photo">
+                  <h5>How much do we spend on hot drinks</h5>
+                  <p class="date">Feburary 19, 2016</p>
+                </div>
+              </div>
+              <div class="post_3">
+                <div class="photo photo_3"><img src="./img/article3.jpg" alt=""></div>
+                <div class="about_photo">
+                  <h5>Good news you might have noticed</h5>
+                  <p class="date">Feburary 19, 2016</p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="background">
+          <div class="title">
+            <h4>BACKGROUND</h4>
+          </div>
+          <div class="summary">
             <div class="headline">
               <i class="material-icons">
               assignment
               </i>
-              <span>Skills</span>
+              <span>Summary</span>
             </div>
-          <div class="skills_1">
-            <div class="rating_block">
-              <span class="rate">74</span><span>Social Media Marketing</span>
-            </div>
-            <div class="other">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span>17+</span>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus cumque molestias explicabo nostrum consectetur iusto voluptate dolorem? Sint laboriosam quibusdam a deleniti vero soluta? Optio dicta minima voluptate amet?</p>
           </div>
-          <div class="skills_2">
-            <div class="rating_block">
-              <span class="rate">67</span><span>Web Development</span>
+          <div class="experience">
+            <div class="headline flex_align_center">
+              <i class="material-icons">
+              assignment
+              </i>
+              <span>Experience</span>
             </div>
-            <div class="other">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span>17+</span>
-            </div>
-          </div>
-        </div>
-        <div class="interests">
-          <div class="headline">
-            <i class="material-icons">
-            assignment
-            </i>
-            <span>Interest</span>
-          </div>
-          <div class="interests_block">
-            <button>Wireless Industry</button>
-            <button>Photography</button>
-            <button>Web design</button>
-            <button>Technology</button>
-          </div>
-        </div>
-      </section>
-      <section class="recommendation">
-        <div class="title">
-          <h4>RECOMMENDATION</h4>
-          <div><span></span><span></span></div>
-        </div>
-        <div class="rec_section">
-          <div class="rec_section_1">
-            <p class="notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magnam molestias voluptates facilis quis doloribus iste quos voluptatum accusantium praesentium voluptate qui maiores obcaecati, labore quisquam quaerat id laudantium nesciunt.</p>
-            <div class="about">
-              <div class="pic"></div>
-              <div class="contact">
-                <p>Steve Jobs</p>
-                <p>Apple</p>
+            <div class="years">
+              <div class="period">
+                <div class="line_1"></div>
+                <div class="present_role">
+                  <div class="role role_1">
+                    <p class="date">2000 - PRESENT</p>
+                    <p class="founder">Co-founder, Chairman</p>
+                    <p class="company">Microsoft</p>
+                  </div>
+                  <div class="ms_logo"><div></div></div>
+                </div>
+              </div>
+              <div class="period">
+                <div class="line_2"></div>
+                <div class="previous_role">
+                  <div class="role role_1">
+                    <p class="date">1992 - 1999</p>
+                    <p class="founder">Senior Developer</p>
+                    <p class="company">Youtube</p>
+                  </div>
+                  <div class="youtube_logo"><div></div></div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="rec_section_2">
-            <p class="notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita est numquam architecto possimus magnam cupiditate nesciunt recusandae, dolor aut doloribus, quas impedit amet quos ea veniam et tempore repellat aspernatur!</p>
-            <div class="about">
-              <div class="pic"></div>
-              <div class="contact">
-                <p>Steve Jobs</p>
-                <p>Apple</p>
+          <div class="education">
+            <div class="headline flex_align_center">
+              <i class="material-icons">
+              assignment
+              </i>
+              <span>Education</span>
+            </div>
+            <div class="years">
+              <div class="period">
+                <div class="line_1"></div>
+                <div class="present_role">
+                  <div class="role role_1">
+                    <p class="date">1973 - 1975</p>
+                    <p class="founder">Havard University</p>
+                    <p class="company">BS Computer Science</p>
+                  </div>
+                  <!-- <div class="ms_logo"><div></div></div> -->
+                </div>
+              </div>
+              <div class="period">
+                <div class="line_2"></div>
+                <div class="previous_role">
+                  <div class="role role_1">
+                    <p class="date">1960 - 1973</p>
+                    <p class="founder"> Lakeside School, Seattle</p>
+                    <p class="company">Youtube</p>
+                  </div>
+                  <!-- <div class="youtube_logo"><div></div></div> -->
+                </div>
               </div>
             </div>
           </div>
-          <div class="rec_section_3">
-            <p class="notes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad, officia provident incidunt molestiae esse in autem corrupti repudiandae odit rem voluptatum cumque? Explicabo optio ab ipsam ducimus tenetur consectetur.</p>
-            <div class="about">
-              <div class="pic"></div>
-              <div class="contact">
-                <p>Steve Jobs</p>
-                <p>Apple</p>
+          <div class="skills">
+              <div class="headline flex_align_center">
+                <i class="material-icons">
+                assignment
+                </i>
+                <span>Skills</span>
+              </div>
+            <div class="skills_1 flex_align_center">
+              <div class="rating_block flex_align_center">
+                <span class="rate">74</span><span>Social Media Marketing</span>
+              </div>
+              <div class="other flex_align_center ">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span>71+</span>
+              </div>
+            </div>
+            <div class="skills_2 flex_align_center">
+              <div class="rating_block flex_align_center">
+                <span class="rate">67</span><span>Web Development</span>
+              </div>
+              <div class="other flex_align_center">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span>17+</span>
               </div>
             </div>
           </div>
+          <div class="interests">
+            <div class="headline flex_align_center">
+              <i class="material-icons">
+              assignment
+              </i>
+              <span>Interest</span>
+            </div>
+            <div class="interests_block">
+              <button>Wireless Industry</button>
+              <button>Photography</button>
+              <button>Web design</button>
+              <button>Technology</button>
+            </div>
+          </div>
+        </section>
+        <section class="recommendation">
+          <div class="title">
+            <h4>RECOMMENDATION</h4>
+            <div><span></span><span></span></div>
+          </div>
+          <div class="rec_section">
+            <div class="rec_section_1">
+              <p class="notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magnam molestias voluptates facilis quis doloribus iste quos voluptatum accusantium praesentium voluptate qui maiores obcaecati, labore quisquam quaerat id laudantium nesciunt.</p>
+              <div class="about">
+                <div class="pic pic_1"></div>
+                <div class="contact">
+                  <p>Steve Jobs</p>
+                  <p>Apple</p>
+                </div>
+              </div>
+            </div>
+            <div class="rec_section_2">
+              <p class="notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita est numquam architecto possimus magnam cupiditate nesciunt recusandae, dolor aut doloribus, quas impedit amet quos ea veniam et tempore repellat aspernatur!</p>
+              <div class="about">
+                <div class="pic pic_2"></div>
+                <div class="contact">
+                  <p>Mark Zuckerberg</p>
+                  <p>Facebook</p>
+                </div>
+              </div>
+            </div>
+            <div class="rec_section_3">
+              <p class="notes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad, officia provident incidunt molestiae esse in autem corrupti repudiandae odit rem voluptatum cumque? Explicabo optio ab ipsam ducimus tenetur consectetur.</p>
+              <div class="about">
+                <div class="pic pic_3"></div>
+                <div class="contact">
+                  <p>Jeffrey Bezos</p>
+                  <p>Amazon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="following">
+          <div class="title">
+            <h4>Following</h4>
+          </div>
+        </section>
+      </div>
+      <div class="main_right">
+        <div class="viewed">
+          <section>
+            <h4>PEOPLE ALSO VIEWED</h4>
+          </section>
+          <section>
+            <h4>MORE INFLUENCERS</h4>
+          </section>
         </div>
-      </section>
-      <section class="following">
-        <div class="title">
-          <h4>Following</h4>
-        </div>
-      </section>
+      </div>
     </div>
   </div>
 
 
 
+<script>
+  // let ham = document.getElementById('ham'),
+  //   fly = document.getElementById('fly');
 
+  // document.addEventListener("click", function(event){
+  //   if(window.innerWidth <= 600){ //If window is minimized
+  //     if(event.target.closest(".ham" )){ //If the click happened inside the container
+  //     console.log("You just clicked class ham");
+  //     console.log(event.target);
+  //     fly.classList.add('flyover_block');
+  //   }else{
+  //     fly.classList.remove('flyover_block');
+  //     console.log("outside box");
+  //   }
+  //   }
+  // }, false)
 
+</script>
 
+</body>
+</html>
 
 <!-- <div id="page">
   <h1>The Ratio Revolution Will Not Be Televised</h1>

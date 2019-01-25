@@ -1,0 +1,138 @@
+header{
+    background-color: rgb(4, 32, 58);
+    height: 50px;
+    width: 100%;
+}
+header .wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* background-color: blue; */
+    margin: 0 auto;
+    /* padding: 0 20px; */
+    width: 80%;
+}
+
+.logo, .hamburger{
+    display: flex;
+    align-items: center;
+    /* background-color: green; */
+    height: 50px;
+}
+.profile{
+    display: none;
+}
+.logo img{
+    width: 30px;
+}
+.hamburger{
+    /* background-color: purple; */
+    position: relative;
+}
+.hamburger .ham{
+    /* background-color: yellow; */
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    position: relative;
+}
+.hamburger .ham::before,
+.hamburger .ham::after{
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color : white;
+    position: absolute;
+}
+.hamburger .ham::before{
+    top: -7px;
+}
+.hamburger .ham::after{
+    top: 7px;
+}
+.hamburger .links-container{
+    display: none;
+}
+
+@media only screen and (max-width: 599px){
+    .hamburger:hover .links-container{
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        background-color: yellow;
+    }
+}
+
+/* MEDIA QUERY */
+@media only screen and (min-width: 600px){
+    header .wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    .ham{
+        display: none;
+    }
+    .hamburger{
+        flex: 1;
+    }
+    .hamburger .links-container{
+        display: flex;
+        align-items: center;
+        background-color: yellow;
+        height: inherit;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .links-container .links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 12px;
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        height: inherit;
+        flex: 1;
+    }
+    .links a:last-child{
+        display: none;
+    }
+    .links-container .input_container{
+        display: none;
+    }
+    .social{
+        width: 130px;
+        background-color: red;
+        padding: 0 12px;
+    }
+    .social, .social a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .profile{
+        display: block;
+        height: 50px;
+    }
+
+
+    .profile img{
+        height: 50px;
+        width: 50px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .links-container .input_container{
+        display: block;
+    }
+    .input_container input{
+        width: 120px;
+    }
+}
+@media only screen and (min-width: 1020px){
+    .links a:last-child{
+        display: inline;
+    }
+}

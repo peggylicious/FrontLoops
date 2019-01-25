@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #022642;
+        }
+        .angle{
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+            position: relative;
+        }
+        .angle:before{
+            content: "";
+            position: absolute;
+            border-top: 30px solid red;
+            border-left: 30px solid blue;
+            left: 0;
+            bottom: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="angle"></div>
+</body>
+</html>

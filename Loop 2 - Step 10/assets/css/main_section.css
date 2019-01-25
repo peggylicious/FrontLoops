@@ -1,19 +1,21 @@
-/* i{display: inline-block;} */
 .main{
     /* padding: 20px; */
 }
 
 .photo{
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.photo_1 img, .photo_2 img, .photo_3 img{
+    height: 100%;
+    width: 80%;
     margin: 0 auto;
-    max-width: 500px;
-    height: 250px;
-    /* border: 1px solid black; */
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
 }
 .post_1, .post_2, .post_3{
-    /* width: inherit; */
     padding: 10px 0;
     border-bottom: 2px solid #808080;
 }
@@ -22,23 +24,10 @@
     cursor: pointer;
 }
 
-.post_1 .photo_1{
-    background-image: url("../img/article1.jpg");
-    width: 100%;
-
-}
-.post_2 .photo_2{
-    background-image: url("../img/article2.jpg");
-}
-.post_3 .photo_3{
-    background-image: url("../img/article3.jpg");
-}
-
-
 /* Background */
 section .title h4{
     padding: 10px 0;
-    color: white;
+    color: #46abfd;
 }
 .background .summary{
     margin-bottom: 50px;
@@ -47,6 +36,24 @@ section .title h4{
 .background .experience .headline{
     display: flex;
     align-items: center;
+}
+.headline i, .headline span{
+    color: #808080;
+    font-size: 16px;
+}
+.headline span{
+    margin-left: 5px;
+}
+.years{
+    padding: 0 23px;
+    /* width: 100%; */
+}
+.summary p{
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    padding-left: 23px;
+    padding-top: 10px;
 }
 .post .about_photo h5, .post .about_photo p{
     color: #fff;
@@ -68,21 +75,19 @@ section .title h4{
     position: relative;
     width: 100%;
 }
+
 .experience .period .line_1, .experience .period .line_2,
 .education .period .line_1, .education .period .line_2{
     position: relative;
     height: 30px;
     width: 2px;
-    background-color: red;
+    background-color: #46abfd;
 }
 
 .years{
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     margin-top: 20px;
-    border: 1px solid palevioletred;
-    /* display: flex;
-    flex-direction: row; */
-    /* padding-left: 23px; */
+    /* border: 1px solid palevioletred; */
 }
 /* Line 1 and Line 2 */
 
@@ -91,19 +96,20 @@ section .title h4{
     content: "";
     position: absolute;
     left: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: black;
+    width: 5px;
+    height: 5px;
+    /* background-color: black; */
+    border: 1px solid #46abfd;
     transform: translate(-50%, 0);
     border-radius: 50%;
 }
 .experience .period .line_1:before,
 .education .period .line_1:before{
-    top: -10px;
+    top: -5px;
 }
 .experience .period .line_2::after,
 .education .period .line_2::after{
-    bottom: -10px;
+    bottom: -5px;
 }
 
 .period .present_role{
@@ -122,10 +128,16 @@ section .title h4{
 }
 .role .date{
     font-size: 10px;
+    color: #fff;
     /* padding-bottom: 5px; */
 }
-.role .company{
+.role .founder{
+    color: #808080;
     font-size: 14px;
+}
+
+.role .company{
+    font-size: 12px;
     color: rgb(38, 116, 161);
 }
 .role .date, .role .company, .role .founder{
@@ -141,7 +153,7 @@ section .title h4{
     transform: translate(0, 50%);
 }
 .ms_logo div{
-    width: 100px;
+    width: 90px;
     height: 30px;
     background-image: url("../img/logo-microsoft.png");
     background-repeat: no-repeat;
@@ -149,7 +161,7 @@ section .title h4{
     background-size: 110%;
 }
 .youtube_logo div{
-    width: 100px;
+    width: 80px;
     height: 30px;
     background-image: url("../img/logo-youtube.png");
     background-repeat: no-repeat;
@@ -163,17 +175,19 @@ section .title h4{
 
 /* Skills */
 .skills_1, .skills_2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
-.rating_block{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* margin-right: 20px; */
+.rating_block, .other{
+    width: 50%;
+}
+.other{
+    /* justify-content: right; */
+}
+.rating_block span:last-child{
+    padding-left: 10px;
+    color: #fff;
+    font-size: 12px;
 }
 .skills_1 .rating_block .rate,
 .skills_2 .rating_block .rate{
@@ -182,28 +196,70 @@ section .title h4{
     width: 30px;
     line-height: 30px;
     text-align: center;
+    border: 1px solid #46abfd;
+    font-size: 14px;
+    color: #46abfd;
 }
-.skills_1 .other,
-.skills_2 .other{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
 .skills_1 .other span,
 .skills_2 .other span{
     border-radius: 50%;
     height: 30px;
     width: 30px;
     display: inline-block;
-    /* line-height: 30px; */
     text-align: center;
     margin-right: 10px;
+    border: 1px solid #46abfd;
+    font-size: 10px;
+    color: #46abfd;
 }
 .skills_1 .other span:last-child,
 .skills_2 .other span:last-child{
     line-height: 30px;
 }
-
+.skills_1 .other span:first-child,
+.skills_1 .other span:nth-child(2),
+.skills_1 .other span:nth-child(3),
+.skills_2 .other span:first-child,
+.skills_2 .other span:nth-child(2),
+.skills_2 .other span:nth-child(3),
+.rec_section .pic
+{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.skills_1 .other span:first-child,
+.skills_2 .other span:nth-child(3),
+.rec_section .pic_1
+{
+    background-image: url("../img/avatar.jpg");
+}
+.skills_1 .other span:nth-child(2),
+.skills_2 .other span:first-child, .rec_section .pic_2
+{
+    background-image: url("../img/avatar2.jpg");
+}
+.skills_1 .other span:nth-child(3),
+.skills_2 .other span:nth-child(2),
+.rec_section .pic_3
+{
+    background-image: url("../img/avatar3.jpg");
+}
+/* Interests */
+.interests .headline{
+    padding: 20px 0;
+}
+.interests .interests_block button{
+    height: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    border: 1px solid #46abfd;
+    color: #fff;
+    padding: 0 10px;
+    background-color: #46abfd;
+    font-size: 11px;
+}
 /* Recommendation */
 
 .recommendation .title{
@@ -224,25 +280,108 @@ section .title h4{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* border: 1px solid red; */
 }
 .rec_section .notes{
-    height: 200px;
-    max-width: 200px;
+    /* height: 200px; */
+    /* min-width: 200px; */
     /* line-height: 300px; */
 }
 .rec_section_1, .rec_section_2, .rec_section_3{
+    min-width: 200px;
+    /* min-width: 33.33%; */
+    flex: 1;
+    height: auto;
+    /* border: 1px solid red; */
 }
 .rec_section_1 .about, .rec_section_2 .about, .rec_section_3 .about{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 50px;
+}
+.rec_section_1 .notes{
+    margin-right: 5px;
 }
 .about .pic{
     height: 30px;
     width: 30px;
     border-radius: 50%;
+    border: 1px solid #46abfd;
 }
-.recommendation .rec_section .rec_section_1 p{
+.notes{
     /* max-width: 300px; */
-    /* height: 200px;; */
+    height: 150px;
+    color: #fff;
+    font-size: 13px;
+    border: 1px solid #46abfd;
+    position: relative;
+}
+.notes:before{
+    position: absolute;
+    content: "";
+    border-top: 31px solid red;
+    border-right: 31px solid transparent;
+    left: 0px;
+    bottom: -30px;
+    /* border: 1px solid yellow; */
+    /* outline: #46abfd; */
+}
+.notes:after{
+    position: absolute;
+    content: "";
+    /* border-top: 28px solid #022642; */
+    border-right: 28px solid transparent;
+    left: 1px;
+    bottom: -28px;
+    /* border: 1px solid yellow; */
+    /* outline: #46abfd; */
+}
+.contact{
+    padding-left: 10px;
+}
+.contact p:first-child{
+    font-size: 14px;
+    color: white;
+}
+.contact p:last-child{
+    color: #808080;
+    font-size: 12px;
+}
+.viewed{
+    display: none;
+}
+@media only screen and (min-width: 768px){
+    .post_container{
+        display: flex;
+        border: 2px solid yellow;
+        flex-wrap: wrap;
+        /* height: 300px; */
+    }
+    .post{
+        /* width: 100%;
+        height: auto; */
+    }
+    .post_1, .post_2, .post_3{
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* padding: 0 10px; */
+        /* flex: 1; */
+    }
+    .post_3{
+        flex: 1;
+    }
+    .photo{
+        height: 300px;
+        /* width: 100%; */
+    }
+    .photo_1 img, .photo_2 img, .photo_3 img{
+        width: 100%;
+    }
+
+    /* Viewed */
+    .viewed{
+        display: block;
+    }
 }

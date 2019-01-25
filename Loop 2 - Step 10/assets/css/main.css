@@ -2,16 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: .05px solid black; */
+    border: .05px solid black;
 }
 a{
     text-decoration: none;
 }
 body{
     font-family: Roboto, sans-serif;
-    background-color: rgb(2, 38, 66);
+    background-color: #022642;
     font-size: 16px;
-    /* margin: 0 5px; */
 }
 .center{
     top: 50%;
@@ -29,7 +28,12 @@ body{
 h2{
     font-size: 2em;
 }
-header{
+.container{
+    width: 100%;
+}
+.header{
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     border: 1px solid black;
     height: 50px;
@@ -41,42 +45,99 @@ header{
     background-position: center;
 }
 .profile{
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/avatar.jpg");
-    border-radius: 50%;
     display: none;
 }
-.logo{
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.logo img{
     width: 30px;
     height: 30px;
-    background-image: url("../img/logo.png");
+    border: 1px solid red;
 }
 .menu{
     align-items: center;
-    padding: 10px;
+    display: flex;
 }
-.menu span{
+.menu .ham{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid red;
+    padding: 10px; /* Creates the space around the hamburger*/
+}
+.menu .hamburger{
     position: relative;
     width: 15px;
     height: 3px;
     background-color: #46abfd;
 }
 
-.menu span::before, .menu span::after{
+.menu .hamburger::before, .menu .hamburger::after{
     content: "";
     position: absolute;
     width: 15px;
     height: 3px;
     background-color: #46abfd;
 }
-.menu span::before{
+.menu .hamburger::before{
     top: -5px;
 }
-.menu span::after{
+.menu .hamburger::after{
     top: 5px;
 }
+.menu .flyover .links a{
+    display: block;
+    padding: 8px 14px;
+    color: #fff;
+    transition: color 0.5s;
 
+}
+
+
+.flyover{
+    display: none;
+    background-color: #0b4470;
+    height: 0;
+    /* transform: translateY(0px); */
+    /* transition: height 10s; */
+}
+
+.menu:hover .flyover{
+    display: block;
+    position: absolute; /* Positioned relative to the .header*/
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.menu:hover .flyover a:hover{
+    color: red;
+    transition: color 0.5s;
+}
+.flyover .social{
+    display: none;
+}
+
+/* Styling for click event */
+
+.flyover_block{
+    height: 100vh;
+    width: 30%;
+    display: block;
+    transition: all 5s;
+}
+
+
+
+/* Ends here ......... */
+
+
+
+
+/* MAIN */
+/* Main Left */
 /* Connections */
 .connections{
     padding: 20px 0;
@@ -113,7 +174,6 @@ header{
     padding: 10px 0;
     color: #808080;
     font-size: 13px;
-
 }
 .avatar_profile .name p{
     font-size: 12px;
@@ -128,46 +188,47 @@ header{
     color: #46abfd;
     border: 1px solid #46abfd;
 }
+
 /* Connections Fans */
-.fans, .connections .link{
+.connections .page_link, .fans{
     overflow: hidden;
     font-size: 10px;
 }
 .fans .numb_connections, .fans .followers,
-.link .linkdin, .link .website
+.page_link .linkdin, .page_link .website
 {
     float: left;
 }
 .fans span b{
     color: white;
 }
-.link .website, .fans .followers{
+.page_link .website, .fans .followers{
     padding-left: 15px;
 }
 .linkdin i, .website i, .copy_file i{
     margin: 5px 2px;
     color: #808080;
-    /* font-size: 13px; */
     font-size: 13px;
 }
-.link a, .copy_file a{
+.page_link a, .copy_file a{
     margin: 5px 2px;
     color: #808080;
-    /* font-size: 13px; */
     font-size: 10px;
 }
 .numb_connections span:last-child, .followers span:last-child{
     color: #808080;
     padding-left: 5px;
 }
-/* Second Header (header_2 class) */
-.header_2{
+
+
+/* Second .Header (small_screen class) */
+.small_screen{
     border-bottom: 1px solid #808080;
     display: flex;
     justify-content: space-around;
 }
 
-.header_2 a{
+.small_screen a{
     text-decoration: none;
     padding: 10px 0;
     width: 25%;
@@ -176,42 +237,206 @@ header{
     font-size: .69em;
     color: #808080;
     font-weight: 600;
-
-    /* padding: 14px .3em; */
+    padding: 14px .3em;
 }
-.header_2 a:hover{
+.small_screen a:hover{
     border-bottom: 2px solid #46abfd;
     color: #46abfd;
 }
+.large_screen{
+    display: none;
+}
+
+/* @media only screen and (min-width:) */
+/* Media Queries */
+@media only screen and (min-width: 480px){
+    /* FOR .HEADER */
+    header{
+        /* padding-right: 20px; */
+    }
+    .header{
+        display: table;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .profile, .logo, .menu{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .profile, .logo{
+        border: 1px solid green;
+    }
+    .profile img{
+        vertical-align: middle;
+        /* padding: 0; */
+    }
+    .profile{
+        width: 60px;
+        /* padding-left: 10px; */
+    }
+    .logo{
+        width: 30px;
+        /* padding-right: 10px; */
+    }
+    .menu{
+        position: relative;
+        background-color: #fff;
+        padding-right: 20px;
+    }
+    .menu .ham{
+        width: 100%;
+    }
+    .menu .hamburger{
+        display: none;
+    }
+    .menu .ham .flyover{
+        width: 100%;
+        height: initial;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        position: relative;
+        background-color: red;
+    }
+    .flyover .search{
+        display: none;
+    }
+    input{
+        /* display: none; */
+    }
+    .flyover .links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .menu .flyover .links a{
+        padding: 5px 14px;
+        font-size: .6em;
+    }
+    .flyover .social{
+        /* display: none; */
+    }
+    .logo{
+        flex-direction: row-reverse;
+    }
 
 
+    /* FOR CONTAINER */
+    /* .avatar_profile .connect button{
+        width: 60%;
+    } */
+}
+@media only screen and (min-width: 768px){
+    body{
+    }
+    .menu{
+        border: 1px solid yellow;
+    }
+    .flyover .search{
+        display: block;
+        width: 20%;
+        border: 1px solid green
+    }
+    .search input{
+        width: 100%;
+    }
+    .flyover .links{
+        width: 60%;
+        border: 1px solid black;
+    }
+    .flyover .social{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 20%;
+        border: 1px solid blue;
+    }
+    .social span{
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /* padding: 0 .2em; */
+    }
+    .logo{
+        flex-direction: row-reverse;
+        height: 50px;
+        /* width: 50px; */
+        /* justify-content: right; */
+    }
 
 
+    /* FOR CONTAINER */
+    .container{
+        position: relative;
+    }
+    .container .small_screen{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .main{
+        display: flex;
+        margin-top: 50px;
+        border: 1px solid red;
+    }
+    .main_mid{
+        width: 60%;
+    }
+    .main_left, .main_right{
+        width: 20%;
+    }
+    .connections, .viewed{
+        border: 1px solid red;
+    }
+    .avatar_profile .avatar{
+        margin: 0 auto;
+    }
+    .avatar_profile .name h3,
+    .avatar_profile .name p{
+        text-align: center;
+    }
+    .avatar_profile .connect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        position: static;
+        /* top: 80px;
+        right: 10px; */
+    }
+    .avatar_profile .connect button{
+        width: 100%;
+    }
+    .fans{
+        display: flex;
+        justify-content: space-between;
+    }
+    .numb_connections span:last-child, .followers span:last-child{
+        padding-left: 0;
+    }
+    .numb_connections span:first-child,
+    .followers span:first-child{
+        text-align: center;
+    }
+    .page_link .website, .fans .followers{
+        padding-left: 0;
+    }
+
+    .fans .numb_connections, .fans .followers{
+        float: initial;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 
 
-
-
-/* *{ */
-    /* box-sizing: border-box; */
-    /* border: 1px solid black;
-} */
-/* #page {
-    margin: 40px auto;
-    padding: 0 1em;
-    max-width: 988px;*/      /* 988px / 16px = 61.75em */
-/* } */
-
-/* h1 {
-    margin-left: 14.575%;*/    /* 144px / 988px = 0.14575 */
-    /*width: 70.85%; */          /* 700px / 988px = 0.7085 */
-/* } */
-
-
-/* .entry h2,
-.entry .content {
-    float: right;
-    width: 85.425%;*/          /* 844px / 988px = 0.85425 */
-/* }.entry .info {
-    float: left;
-    width: 12.551%; */         /* 124px / 988px = 0.12551 */
-/* } */
+@media only screen and (min-width: 1124px){
+    .avatar_profile .connect button{
+        width: 70%;
+    }
+}
