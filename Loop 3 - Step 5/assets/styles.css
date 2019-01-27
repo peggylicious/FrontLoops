@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px; */
+    /* transform: rotate(-30deg); */
+    margin: 30px;
+}
+.container .one{
+    border-left: 100px solid transparent;
+    border-top: 100px solid green;
+    border-bottom: 100px solid black;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.container .two{
+    border-left: 100px solid grey;
+    border-top: 100px solid dodgerblue;
+    border-bottom: 100px solid orange;
+    background-color: indigo;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%) rotate(180deg);
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    /* transform-origin: center center; */
+}
+.small_circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: navy;
+}
+.small_circle_pie{
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: navy;
+}
+.container .two{
+    /* width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-bottom-left-radius: 100px;
+    position: relative; */
+    /* left: -10px;
+    top: -10px; */
+    /* border-left: 10px solid green;
+    border-top: 10px solid green; */
+    /* z-index: -1; */
+}
+.pie{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: brown;
+    border-radius: 50%;
+    background: conic-gradient(deeppink 10%, black 0 35%, red 0 75%, yellowgreen 0 100%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-70deg);
+    background-color: orange;
+}
