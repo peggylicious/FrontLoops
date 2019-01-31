@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 80%;
+    margin: 0 auto;
+
+}
+header p{
+    background-color: green;
+}
+section{
+    width: 80%;
+    /* height: 300px; */
+    border-radius: 5px;
+    background-color: red;
+    margin: 10px auto 0 auto;
+    padding: 20px;
+}
+
+.layout_style{
+    display: flex;
+    justify-content: space-between;
+}
+.order_tab div{
+    background-color: yellow;
+}
+.order_tab img{
+    height: 30px;
+    width: 30px;
+    line-height: normal;
+    vertical-align: middle;
+    /* object-fit: contain; */
+    background-color: #fff;
+}
+.section_1 > div{
+    margin: 20px 0;
+    background-color: green;
+}
+.section_1 > .order_tab{
+    align-items: center;
+}
+/* .section_1 > .order_tab, .purchase_order{
+    display: flex;
+    justify-content: space-between;
+} */
