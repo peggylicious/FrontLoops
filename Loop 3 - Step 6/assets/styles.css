@@ -4,20 +4,21 @@
     box-sizing: border-box;
 }
 header{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 
 }
 header p{
     background-color: green;
+    font-size: 12px;
 }
 section{
-    width: 80%;
+    width: 90%;
     /* height: 300px; */
     border-radius: 5px;
     background-color: red;
     margin: 10px auto 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .layout_style{
@@ -36,13 +37,40 @@ section{
     background-color: #fff;
 }
 .section_1 > div{
-    margin: 20px 0;
+    padding: 20px 0;
+    margin: 5px 0;
     background-color: green;
 }
 .section_1 > .order_tab{
     align-items: center;
 }
-/* .section_1 > .order_tab, .purchase_order{
+
+.section_2 h2{
+    padding: 20px 0;
+}
+.section_2 form{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-} */
+}
+.section_2 form label{
+    font-size: .5em;
+}
+.section_2 form> div{
+    display: flex;
+    flex-direction: column;
+    /* margin: 5px 0; */
+    margin-bottom: 15px;
+    background-color: orange;
+    /* padding: 5px 0; */
+}
+.section_2 form div:first-child{
+    width: 100%;
+}
+
+.section_2 .holder{
+    width: 60%;
+}
+.section_2 .expires, .section_2 .security_number{
+    width: 15%;
+}
