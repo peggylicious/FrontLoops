@@ -9,9 +9,9 @@ html{
 body{
     background-color: #FAFAFA;
 }
-.header_1, footer{
+.header_1{
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto 30px auto;
 
 }
 .header_1 p{
@@ -23,8 +23,8 @@ section{
     /* height: 300px; */
     border-radius: 5px;
     /* background-color: red; */
-    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
-    margin: 10px auto 0 auto;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+    margin: 20px auto 0 auto;
     padding: 0 20px;
 }
 
@@ -46,7 +46,8 @@ section{
 .section_1 > div{
     padding: 10px 0;
     margin: 5px 0;
-    background-color: green;
+    /* background-color: green; */
+    border-bottom: 1px solid #dedede;
 }
 .section_1 > .order_tab{
     align-items: center;
@@ -101,10 +102,12 @@ input[type=radio]{
 }
 
 footer{
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
+    margin: 0 auto;
 }
 footer p{
     color: #5F86EE;
