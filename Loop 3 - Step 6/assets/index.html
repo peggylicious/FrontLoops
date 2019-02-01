@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <header>
+  <header class="header_1">
     <p>Cart - Customer - Shipping Method - <b>Payment Method</b></p>
   </header>
   <section class="section_1">
@@ -32,20 +32,20 @@
     <h2>Payment information</h2>
     <form action="">
       <div>
-        <label for="card_number">CARD NUMBER</label>
+        <label for="card_number"><strong>CARD NUMBER</strong></label>
         <input id="card_number" type="text" name="cardnumber">
       </div>
       <!-- <div> -->
         <div class="holder">
-          <label for="card_holder">CARD HOLDER</label>
+          <label for="card_holder"><strong>CARD HOLDER</strong></label>
           <input id="card_holder" type="text">
         </div>
         <div class="expires">
-          <label for="expiry_date">EXP. DATE</label>
+          <label for="expiry_date"><strong>EXP. DATE</strong></label>
           <input id="expiry_date" type="text">
         </div>
         <div class="security_number">
-          <label for="cvc">CVC</label>
+          <label for="cvc"><strong>CVC</strong></label>
           <input id="cvc" type="text">
         </div>
       <!-- </div> -->
@@ -53,6 +53,16 @@
   </section>
   <section class="section_3">
     <header><h2>Billing address</h2></header>
+    <form action="">
+      <div>
+        <label for=""><input type="radio" name="" id="">Same as the Shipping address</label>
+      </div>
+      <div><label for=""><input type="radio" name="" id="">Use a different billing address</label></div>
+    </form>
   </section>
+  <footer>
+    <p>Return to shipping method</p>
+    <button>Complete order</button>
+  </footer>
 </body>
 </html>

@@ -3,12 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
+html{
+    font-family: Roboto, sans-serif;
+}
+body{
+    background-color: #FAFAFA;
+}
+.header_1, footer{
     width: 90%;
     margin: 0 auto;
 
 }
-header p{
+.header_1 p{
     background-color: green;
     font-size: 12px;
 }
@@ -16,7 +22,8 @@ section{
     width: 90%;
     /* height: 300px; */
     border-radius: 5px;
-    background-color: red;
+    /* background-color: red; */
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
     margin: 10px auto 0 auto;
     padding: 0 20px;
 }
@@ -26,7 +33,7 @@ section{
     justify-content: space-between;
 }
 .order_tab div{
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 .order_tab img{
     height: 30px;
@@ -37,7 +44,7 @@ section{
     background-color: #fff;
 }
 .section_1 > div{
-    padding: 20px 0;
+    padding: 10px 0;
     margin: 5px 0;
     background-color: green;
 }
@@ -45,7 +52,7 @@ section{
     align-items: center;
 }
 
-.section_2 h2{
+.section_2 h2, .section_3 h2{
     padding: 20px 0;
 }
 .section_2 form{
@@ -55,13 +62,19 @@ section{
 }
 .section_2 form label{
     font-size: .5em;
+    color: #ACAAAA;
+}
+.section_2 input{
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #DEDEDE;
 }
 .section_2 form> div{
     display: flex;
     flex-direction: column;
     /* margin: 5px 0; */
     margin-bottom: 15px;
-    background-color: orange;
+    /* background-color: orange; */
     /* padding: 5px 0; */
 }
 .section_2 form div:first-child{
@@ -73,4 +86,62 @@ section{
 }
 .section_2 .expires, .section_2 .security_number{
     width: 15%;
+}
+
+input[type=radio]{
+    background-color: yellow;
+    margin-right: 10px;
+}
+.section_3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section_3 div{
+    margin: 5px 0;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+footer p{
+    color: #5F86EE;
+}
+button{
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    background-color: #5F86ED;
+    border-radius: 5px;
+    color: #fff;
+}
+@media only screen and (min-width: 500px){
+    .section_2 .holder{
+        width: 100%;
+    }
+    .section_2 .expires, .section_2 .security_number{
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    body{
+        margin: 0 50px;
+    }
+    .header_1, footer{
+        width: 50%;
+        margin: 0;
+    }
+    .section_1{
+        width: 45%;
+        float: right;
+    }
+    .section_2{
+    }
+    section{
+        margin: 10px 0 0 0;
+        width: 50%;
+    }
 }
