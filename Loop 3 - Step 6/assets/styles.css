@@ -8,6 +8,7 @@ html{
 }
 body{
     background-color: #FAFAFA;
+    padding-top: 20px;
 }
 .header_1{
     width: 90%;
@@ -15,7 +16,6 @@ body{
 
 }
 .header_1 p{
-    background-color: green;
     font-size: 12px;
 }
 section{
@@ -33,11 +33,29 @@ section{
     justify-content: space-between;
 }
 .order_tab div{
-    /* background-color: yellow; */
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    position: relative;
+}
+.order_tab div::before{
+    content: "2";
+    position: absolute;
+    background-color: #5f86ed;
+    color: #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
 }
 .order_tab img{
     height: 30px;
-    width: 30px;
+    width: 40px;
     line-height: normal;
     vertical-align: middle;
     /* object-fit: contain; */
@@ -54,6 +72,7 @@ section{
 .section_1 .purchase_order p{
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: .904em;
 }
 .section_1 .order_tab, .section_1 .purchase_order{
     border-bottom: 1px solid #dedede;
@@ -61,7 +80,9 @@ section{
 .section_1 .total{
     font-size: 1.2em;
 }
-
+.section_2{
+    padding-bottom: 20px;
+}
 .section_2 h2, .section_3 h2{
     padding: 20px 0;
 }
@@ -95,15 +116,19 @@ section{
     width: 100%;
 }
 
-.section_2 .holder{
+/* .section_2 .holder{
     width: 55%;
 }
 .section_2 .expires, .section_2 .security_number{
     width: 20%;
+} */
+.section_2 .holder{
+    width: 100%;
 }
-
+.section_2 .expires, .section_2 .security_number{
+    width: 48%;
+}
 input[type=radio]{
-    /* background-color: yellow; */
     margin-right: 10px;
 }
 .section_3{
@@ -112,6 +137,9 @@ input[type=radio]{
 }
 .section_3 div{
     margin: 5px 0;
+}
+.section_3 label{
+    font-size: .90em;
 }
 
 footer{
@@ -134,11 +162,17 @@ button{
     color: #fff;
 }
 @media only screen and (min-width: 500px){
-    .section_2 .holder{
+    /* .section_2 .holder{
         width: 100%;
     }
     .section_2 .expires, .section_2 .security_number{
         width: 48%;
+    } */
+    .section_2 .holder{
+        width: 55%;
+    }
+    .section_2 .expires, .section_2 .security_number{
+        width: 20%;
     }
 }
 
@@ -151,13 +185,11 @@ button{
         margin: 0;
     }
     .section_1{
-        width: 45%;
+        width: 35%;
         float: right;
-    }
-    .section_2{
     }
     section{
         margin: 50px 0 0 0;
-        width: 50%;
+        width: 60%;
     }
 }
