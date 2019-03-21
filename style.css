@@ -10,11 +10,6 @@ h1{
     text-align: center;
     padding: 16px 0;
 }
-h2{
-    width: 200px;
-    margin: 0 auto;
-    text-align: left;
-}
 ul{
     width: 200px;
     margin: 0 auto;
@@ -22,10 +17,17 @@ ul{
     text-decoration: none;
     list-style-type: none;
 }
+.container > ul > li{
+    font-size: 1.5em;
+    padding: 8px 0 0 0;
+}
 li{
     font-weight: 700;
     padding-left: 40px;
     font-size: .9em;
+}
+.listings li:first-child{
+    padding-top: 8px;
 }
 a{
     display: inline-block;
@@ -34,12 +36,4 @@ a{
     padding: 8px 16px 8px 0;
     font-weight: normal;
 
-}
-.listings li:first-child{
-    padding-top: 8px;
-}
-
-.container > ul > li{
-    font-size: 1.5em;
-    padding: 8px 0 0 0;
 }
