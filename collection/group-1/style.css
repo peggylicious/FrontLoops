@@ -11,7 +11,9 @@ body{
     background-image: url("../../images/forest-hawaii.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center; */
+    height: 100vh;
+    /* max-height: 100%; */
+    background-position: center;
 }
 .overlay{
     background-color: rgba(0, 0, 0, .7);
@@ -26,6 +28,8 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* background-color: green; */
+    width: 100%;
 }
 h1{
     padding-bottom: 10px;
@@ -40,9 +44,20 @@ header{
 ul{
     list-style-type: none;
     text-align: left;
+    /* background-color: red; */
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 li{
     color: #fff;
+    /* background-color: yellow; */
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* padding-left: 50px; */
 }
 a b{
     color: #fff;
@@ -55,4 +70,8 @@ a{
     padding: 8px 16px;
     font-size: 16px;
     /* font-weight: 600; */
+}
+
+@media only screen and (min-width: 900px){
+
 }
