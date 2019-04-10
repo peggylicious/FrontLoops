@@ -10,6 +10,9 @@ body{
     background-color: #FAFAFA;
     padding-top: 20px;
 }
+#my-arrow{
+    top: 30px;
+}
 .header_1{
     width: 90%;
     margin: 10px auto 30px auto;
