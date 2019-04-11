@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    background-color: rgb(71, 166, 221);
+    width: 80%;
+    height: 90vh;
+}
+/* Sets the width for the selection box sane as Section class width */
+.section{
+    background-color: transparent;
+    background-color: white;
+    width: 90%;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.default{
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.default p{
+    float: left;
+    width: 80%;
+    padding: 10px 5px;
+}
+.default span{
+    float: right;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 10px;
+    height: 10px;
+}
+.default span:before{
+    content: "";
+    height: 10px;
+    position: absolute;
+    top: -8px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+.default span:after{
+    content: "";
+    height: 10px;
+    position: absolute;
+    top: 8px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+}
+/* Sets the width for the option box same as Section class width */
+.options{
+    position: absolute;
+    z-index: 5;
+    background-color: #fff;
+    width: 100%;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 10px;
+    padding: 8px 0;
+    display: none;
+}
+.trans{
+    transition: background-color 7s;
+    background-color: green;
+}
+.options p{
+    padding: 4px 30px;
+    position: relative;
+}
+.options p:hover{
+    background-color: rgb(26, 101, 187);
+}
+.opt-list{
+    position: relative;
+    overflow: hidden;
+}
+
+.tick{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: rotate(30deg) translate(0, -50%);
+    float: left;
+    z-index: 5;
+    visibility: hidden;
+    /* border: 1px solid dodgerblue; */
+}
+.tick:before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    left: 11px;
+    top: 4px;
+    background-color: rgb(39, 39, 41);
+}
+.tick:after{
+    content: "";
+    width: 6px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(39, 39, 41);
+    left: 6px;
+    top: 12px;
+}
+
+@media only screen and (min-width: 600px){
+    .section{
+        background-color: white;
+        width: 50%;
+        padding: 30px 15px;
+    }
+    .default{
+        display: none;
+    }
+    .options{
+        display: block;
+        position: static;
+        overflow: hidden;
+        padding: 0;
+        border: 2px solid dodgerblue;
+    }
+    .opt-list{
+        /* position: static; */
+        float: left;
+        width: 33.33%;
+        border: 2px solidred;
+    }
+    .opt-list:nth-child(2){
+        border-left: 2px solid dodgerblue;
+        border-right: 2px solid dodgerblue;
+    }
+    .opt-list p{
+        padding: 16px 16px;
+        display: block;
+        width: 100%;
+    }
+    .tick{
+        display: none;
+    }
+}

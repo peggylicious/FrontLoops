@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Segmented control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../go-to-button/style.css">
+</head>
+<body>
+    <!-- Create a segmented control that turns into a <select> for mobile screens. They should sync whenever any of them is changed. -->
+
+    <!-- Back Button -->
+    <a href="../../index.html" id="my-arrow">
+        <span class="back-to-home">
+            <div class="arrow"></div>
+        </span>
+    </a>
+
+    <!-- Main Container -->
+    <div class="container center">
+        <div class="section center">
+            <div class="wrapper">
+                <div class="default">
+                    <p>Sort by price</p>
+                    <span></span>
+                </div>
+                <div class="options">
+                    <div class="opt-list">
+                        <span class="tick one" id="mark"></span><p>Sort by price</p>
+                    </div>
+                    <div class="opt-list">
+                        <span class="tick two" id="mark"></span><p>Sort by name</p>
+                    </div>
+                    <div class="opt-list">
+                        <span class="tick three" id="mark"></span><p>Sort by relevance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>

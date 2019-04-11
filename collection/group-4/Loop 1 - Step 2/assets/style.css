@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+    /* font-family: Arial, sans-serif; */
+}
+body{
+    background-color: dodgerblue;
+}
+.container{
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding: 20px 0;
+}
+form, .tab_pane, .display{
+    padding: 0 50px;
+}
+form{
+    overflow: hidden;
+}
+.tab_pane{
+    overflow: hidden;
+}
+.tab{
+    float: left;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.tab p{
+    display: inline-block;
+    padding: 20px 20px 20px 0;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: grey;
+    cursor: pointer;
+}
+.tab_1 p{
+    color: black;
+}
+.display{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+input[type="number"]{
+    width: 68%;
+    float: left;
+    height: 50px;
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-color: grey;
+}
+input[type="number"]:focus{
+    border-bottom-color: black;
+}
+input[type="button"]{
+    height: 50px;
+    width: 30%;
+    float: right;
+    cursor: url(./design/design.png), pointer;
+    border: none;
+}
+input[type="button"]:active, input[type="button"]:focus{
+    outline: none;
+}
+input[type="number"]:-webkit-outer-spin-button{
+    border-radius: 10px;
+}

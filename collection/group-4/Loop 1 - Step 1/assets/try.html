@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>Segmented control</title>
+    <style>
+        /* select{
+            display: none;
+        } */
+
+    </style>
+</head>
+<body>
+    <!--
+        Create a segmented control that turns into a <select> for mobile screens.
+        They should sync whenever any of them is changed.
+    -->
+    <!-- <div class="container">
+        <div class="select-block">
+
+        </div>
+    </div> -->
+    <div class="container" id="cont">
+        <p id="para">Hello</p>
+        <ul>
+            <li class="one" value="apple">Apple</li>
+            <li class="two" id="list2" value="Oranges">Oranges</li>
+            <li class="three" value="Pineapple">Pineapple</li>
+            <li class="four" value="Water Melon">Water Melon</li>
+        </ul>
+    </div>
+    <script>
+        var container = document.getElementById('one');
+        var paragraph = document.getElementById('para');
+        var list = document.getElementById('list2');
+        var allList = document.querySelectorAll('li');
+        var unOrdered = document.querySelector('ul');
+        list.innerHTML = "Pear";
+        console.log(allList);
+
+        // document.getElementById("list").addEventListener("click", function(e) {
+        //     // e.target will be the item that was clicked on
+        //     e.target.style.color = "#F00";
+        // })
+
+        for (var i = 0; i < allList.length; i++){
+            allList[i].addEventListener('click', function(e){
+                paragraph.innerHTML = e.target.innerHTML;
+                unOrdered.style.display = 'none';
+            })
+        }
+
+        paragraph.addEventListener('click', function(e){
+            unOrdered.style.display = 'block';
+        })
+        
+    </script>
+</body>
+</html>

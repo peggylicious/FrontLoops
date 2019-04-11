@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>Progress navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:900" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../go-to-button/style.css">
+</head>
+<body>
+    <!--
+        Create Tabs component, that has several tab buttons. Each button toggles active tab content.
+        Add a text input with a button. User can enter any tab index in the input and toggle it by clicking the button.
+        Indexes in this task are not the same as they are used in JS, so by entering 1 - first tab should be shown, not 0.
+        If invalid index is entered - browser must show an alert.
+    -->
+
+    <!-- Back Button -->
+    <a href="../../index.html" id="my-arrow">
+        <span class="back-to-home">
+            <div class="arrow"></div>
+        </span>
+    </a>
+
+    <!-- Main Container -->
+
+    <div class="container">
+        <form action="" id="myForm">
+            <input type="number" name="tab_index" id="" placeholder="Enter tab index">
+            <input type="button" value="Change Tab">
+        </form>
+        <div class="tab_pane">
+            <div class="tab tab_1"><p>Positive</p></div>
+            <div class="tab tab_2"><p>Negative</p></div>
+            <div class="tab tab_3"><p>Neutral</p></div>
+        </div>
+        <div class="display"><p>Positive Content</p></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
