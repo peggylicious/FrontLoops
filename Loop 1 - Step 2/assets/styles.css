@@ -15,6 +15,7 @@
         text-transform: uppercase;
         background-repeat: no-repeat;
         background-position: 50% 30%;
+        background-size: cover;
     }
     .container{
         width: 70%;
